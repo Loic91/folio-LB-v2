@@ -1,0 +1,1 @@
+https://www.pixelsurplus.com/freebies/shamery-free-modern-serif-font
