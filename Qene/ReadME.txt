@@ -1,1 +1,0 @@
-https://www.behance.net/gallery/109666325/QENE-G-FREE-SERIF-SCRIPT-FONT
