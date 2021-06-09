@@ -1,0 +1,129 @@
+/*! locomotive-scroll v3.6.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  } */
+body {
+    margin: 0;
+}
+main {
+    display: block;
+}
+.c-cta h1 {
+    font-family: "ApexMk3";
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+/* hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #272727;
+} */
+.o-h,
+.o-h1,
+h1
+{
+    margin-top: 0;
+    line-height: 1.5;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 400;
+}
+.o-h1,
+h1 {
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+@media (max-width: 699px) {
+.o-h1,
+h1 {
+      font-size: 12vw;
+    }
+}
+@media (min-width: 700px) and (max-width: 1599px) {
+.o-h1,
+h1 {
+    font-size: 13.5vw;
+    }
+}
+@media (min-width: 1600px) {
+.o-h1,
+h1 {
+      font-size: 12vw;
+    }
+}
+
+.o-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95rem;
+}
+@media (max-width: 699px) {
+    .o-container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+}
+@media (min-width: 700px) {
+    .o-container {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+    }
+}
+
+.o-title {
+    margin: 0;
+    padding: 2.5rem 0;
+    perspective: 600px;
+    -webkit-perspective: 600px;
+}
+.o-title_line {
+    display: block;
+    opacity: 0;
+    /* transform-origin: center top; */
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(-80deg);
+    transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1),
+      transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-size: 0;
+}
+.o-title.is-inview .o-title_line {
+    transform: none;
+    opacity: 1;
+}
+.o-title.is-inview .o-title_line:first-child {
+    transition-delay: 0.4s;
+}
+.o-title.is-inview .o-title_line:nth-child(2) {
+    transition-delay: 0.5s;
+}
+.o-title.is-inview .o-title_line:nth-child(3) {
+    transition-delay: 0.6s;
+}
+.o-title.is-inview .o-title_line:nth-child(4) {
+    transition-delay: 0.7s;
+}
+
+
+.o-title_line span {
+    display: inline-block;
+    min-width: 0.05em;
+    font-size: 13.5vw;
+}
+  
+@media (max-width: 699px){
+    .o-title_line span{
+        font-size: 14.5vw;
+    }
+}

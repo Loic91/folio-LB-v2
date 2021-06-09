@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="locomotive-scroll.css">
+    <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="style.css">
+    <title>locomotive</title>
+</head>
+<body>
+
+    <div class="smooth-scroll" data-scroll-container>
+
+        <nav>
+            <ul class="header js-liquify-trigger">
+                <li>FOLIO No.001</li>
+                <li>2K21</li>
+            </ul>
+        </nav>
+
+        <svg style="height: 0; opacity: 0; visibility: hidden;">
+            <filter id="liquify">
+                <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
+                <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+              </filter>
+        </svg>
+
+
+
+
+
+        <!-- <div class="section" data-scroll-section> -->
+    
+            <div class="o-container">
+                <div class="c-cta">
+                    <h1 class="o-title" data-scroll>
+                        <span class="o-title_line">
+                            <span>Loic Brijawi</span>
+                        </span>
+                        <span class="o-title_line">
+                            <span>Développeur</span>
+                        </span>
+                        <span class="o-title_line u-white">
+                            <span>Front-end</span>
+                        </span>
+                    </h1>
+                    <!-- <hr class="c-cta_line" data-scroll data-scroll-offset="100" /> -->
+                </div>
+            </div>
+
+            <div class="bio__container">
+                <div class="text__bio__1" >
+                    <h1 id="bio__1">Lorem ipsum dolor sit amet</h1>
+                </div>
+                <div class="text__bio__2" >
+                    <h1 id="bio__2">Lorem ipsum dolor sit</h1>
+                </div>
+                <div class="text__bio__3" >
+                    <h1 id="bio__3">Lorem ipsum dolor sit amet</h1>
+                </div>
+                <div class="text__bio__4" >
+                    <h1 id="bio__4">Lorem ipsum dolor sit</h1>
+                </div>
+                <div class="text__bio__5" >
+                    <h1 id="bio__5">Lorem ipsum dolor sit amet</h1>
+                </div>
+                <div class="text__bio__6" >
+                    <h1 id="bio__6">Lorem ipsum dolor sit</h1>
+                </div>
+    
+                <!-- <div class="image_gallery" data-scroll data-scroll-speed="2">
+                    <img src="img/adrien-1.jpg" alt="">
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <h2 class="header js-ink-trigger">
+                FOLIO No.001<br/>
+                2K21
+            </h2>
+            <svg style="height: 0; opacity: 0; visibility: hidden;">
+                <filter id="liquify">
+                    <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
+                    <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+                  </filter>
+              </svg>
+    
+
+        
+        
+
+        <section>
+            <div class="text-display-0">
+                <h1 id="text-0">EXPOSITION</h1>
+            </div>
+
+            <div class="text-display-1">
+                <h1 id="text-1">D'ART</h1>
+            </div>
+
+            <div class="text-display-2">
+                <h1 id="text-2">CONTEMPORAIN</h1>
+            </div>
+
+            <div class="text-display-3">
+                <h1 id="text-3">EN LIGNE</h1>
+            </div>
+        </section>
+
+        
+
+        <section>
+            <div class="b-text">
+                <div class="content content--feature">
+                    <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
+                        Imaginé et réalisé en France
+                    </p>
+                    <p class="content__breakout content__breakout--medium"data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" >
+                        notre créativité est l'expression d'un savoir-faire ancestral
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloc">
+                <h3>hello world</h3>
+            </div>
+        </section>
+
+    </div>
+    
+
+
+    
+
+    <!-- script -->
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+
+            // for tablet smooth
+            tablet: { smooth: true },
+
+            // for mobile
+            smartphone: { smooth: true }
+        });
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
+
+    <script src="app.js"></script>
+    <script src="code-gsap.js"></script>
+    <script src="locomotive-scrolltrigger.js"></script>
+    
+</body>
+</html>
