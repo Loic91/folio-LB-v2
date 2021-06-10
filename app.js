@@ -31,22 +31,22 @@ const sceneAuthorTransition = new ScrollMagic.Scene({
   .reverse(false)
   .addTo(controller);
  
-// textTriggers.map(text => {
-//   const isBelowScreen = (text.getBoundingClientRect().top > window.innerHeight) ? true : false;
-//   const dataDealy = (text.getAttribute('data-delay') === null || isBelowScreen) ? 0.5 : text.getAttribute('data-delay');
-//   const sceneText = new ScrollMagic.Scene({
-//     triggerElement: text,
-//     triggerHook: 'onEnter',
-//   })
-//   .setTween(text, 0.5, {
-//     y: 0,
-//     opacity: 1,
-//     ease: Power4.easeOut,
-//     delay: dataDealy,
-//   })
-//   .reverse(false)
-//   .addTo(controller);
-// });
+textTriggers.map(text => {
+  const isBelowScreen = (text.getBoundingClientRect().top > window.innerHeight) ? true : false;
+  const dataDealy = (text.getAttribute('data-delay') === null || isBelowScreen) ? 0.5 : text.getAttribute('data-delay');
+  const sceneText = new ScrollMagic.Scene({
+    triggerElement: text,
+    triggerHook: 'onEnter',
+  })
+  .setTween(text, 0.5, {
+    y: 0,
+    opacity: 1,
+    ease: Power4.easeOut,
+    delay: dataDealy,
+  })
+  .reverse(false)
+  .addTo(controller);
+});
 
 // inkTriggers.map(ink => {
 //   const sceneInk = new ScrollMagic.Scene({
