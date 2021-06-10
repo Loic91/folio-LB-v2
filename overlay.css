@@ -25,7 +25,7 @@
 .rw-words span{
 	position: absolute;
     left: 10%;
-    top: 50%;
+    top: 100%;
 	opacity: 0;
 	overflow: hidden;
 	width: 100%;
