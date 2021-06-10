@@ -45,19 +45,19 @@
 	color: rgb(7, 27, 44);
 }
 .rw-words span:nth-child(3) { 
-	animation-delay: 2s; 
+	animation-delay: 2.3s; 
 	color: rgb(7, 27, 44);	
 }
 .rw-words span:nth-child(4) { 
-	animation-delay: 3s; 
+	animation-delay: 3.3s; 
 	color: rgb(7, 27, 44);
 }
 .rw-words span:nth-child(5) { 
-	animation-delay: 4s; 
+	animation-delay: 4.3s; 
 	color: rgb(7, 27, 44);
 }
 .rw-words span:nth-child(6) {  
-	animation-delay: 5s; 
+	animation-delay: 5.3s; 
 	color: rgb(7, 27, 44);
 }
 @keyframes rotateWordsSecond {
