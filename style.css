@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-color: #f1eccf;
+    background-color: #031125;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ section {
 nav{
     /* font-family: "New York"; */
     font-family: "ApexMk3";
-    color: rgb(0, 0, 0);
+    color: #ccdaee;
 }
 
 li{
@@ -50,7 +50,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 }
 .text__bio__1 {
@@ -63,7 +63,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 
     margin-top: 0;
@@ -78,7 +78,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 
     margin-top: 0;
@@ -93,7 +93,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 
     margin-top: 0;
@@ -108,7 +108,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 
     margin-top: 0;
@@ -123,7 +123,7 @@ li{
     font-family: "New York";
     font-weight: lighter;
     font-size: 1.5em; 
-    color: #000000;
+    color: #ccdaee;
     z-index: 2;
 
     margin-top: 0;

@@ -27,7 +27,7 @@ ScrollTrigger.create({
 
     start: "top bottom",
     end: "top top",
-    animation: gsap.from('#bio__1', 1.4, {
+    animation: gsap.from('#bio__1', 1.8, {
                 y: '100%',
                 delay: 0.5,
     }),
@@ -40,7 +40,7 @@ ScrollTrigger.create({
 
     start: "top bottom",
     end: "top top",
-    animation: gsap.from('#bio__2', 1.4, {
+    animation: gsap.from('#bio__2', 1.8, {
                 y: '100%',
                 delay: 0.5,
     }),
@@ -52,7 +52,7 @@ ScrollTrigger.create({
 
   start: "top bottom",
   end: "top top",
-  animation: gsap.from('#bio__3', 1.4, {
+  animation: gsap.from('#bio__3', 1.8, {
               y: '100%',
               delay: 0.5,
   }),
@@ -64,7 +64,7 @@ ScrollTrigger.create({
 
   start: "top bottom",
   end: "top top",
-  animation: gsap.from('#bio__4', 1.4, {
+  animation: gsap.from('#bio__4', 1.8, {
               y: '100%',
               delay: 0.5,
   }),
@@ -76,7 +76,7 @@ ScrollTrigger.create({
 
   start: "top bottom",
   end: "top top",
-  animation: gsap.from('#bio__5', 1.4, {
+  animation: gsap.from('#bio__5', 1.8, {
               y: '100%',
               delay: 0.5,
   }),
@@ -88,7 +88,7 @@ ScrollTrigger.create({
 
   start: "top bottom",
   end: "top top",
-  animation: gsap.from('#bio__6', 1.4, {
+  animation: gsap.from('#bio__6', 1.8, {
               y: '100%',
               delay: 0.5,
   }),

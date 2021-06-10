@@ -12,7 +12,7 @@ main {
 }
 .c-cta h1 {
     font-family: "ApexMk3";
-    color: rgb(0, 0, 0);
+    color: #ccdaee;
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -94,8 +94,8 @@ h1 {
     /* transform-origin: center top; */
     transform-style: preserve-3d;
     transform: translateY(100%) rotateX(-80deg);
-    transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1),
-      transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1),
+      transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
     font-size: 0;
 }
 .o-title.is-inview .o-title_line {
@@ -103,16 +103,16 @@ h1 {
     opacity: 1;
 }
 .o-title.is-inview .o-title_line:first-child {
-    transition-delay: 0.4s;
+    transition-delay: 2s;
 }
 .o-title.is-inview .o-title_line:nth-child(2) {
-    transition-delay: 0.5s;
+    transition-delay: 2.1s;
 }
 .o-title.is-inview .o-title_line:nth-child(3) {
-    transition-delay: 0.6s;
+    transition-delay: 2.2s;
 }
 .o-title.is-inview .o-title_line:nth-child(4) {
-    transition-delay: 0.7s;
+    transition-delay: 2.3s;
 }
 
 
