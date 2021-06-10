@@ -22,7 +22,6 @@ section {
 }
 /* ========================================== */
 nav{
-    /* font-family: "ApexMk3"; */
     font-family: "GRIFTER";
     color: rgb(7, 27, 44);
 }
@@ -56,6 +55,8 @@ li{
     font-size: 1em; 
     color: rgb(7, 27, 44);
     z-index: 2;
+
+    padding-top: 10px;
 }
 .text__bio__1 {
     overflow: hidden;
@@ -70,6 +71,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__2 {
@@ -85,6 +87,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__3 {
@@ -100,6 +103,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__4 {
@@ -115,6 +119,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__5 {
@@ -130,6 +135,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__6 {
@@ -145,6 +151,7 @@ li{
     color: rgb(7, 27, 44);
     z-index: 2;
 
+    padding-top: 10px;
     margin-top: 0;
 }
 .text__bio__7 {
