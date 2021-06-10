@@ -28,22 +28,23 @@
         </div>
     </div>
     <!-- ===================================== -->
+    <nav>
+        <ul class="header js-liquify-trigger">
+            <li>FOLIO No.001</li>
+            <li>2K21</li>
+        </ul>
+    </nav>
+
+    <svg style="height: 0; opacity: 0; visibility: hidden;">
+        <filter id="liquify">
+            <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
+            <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+          </filter>
+    </svg>
 
     <div class="smooth-scroll" data-scroll-container>
 
-        <nav>
-            <ul class="header js-liquify-trigger">
-                <li>FOLIO No.001</li>
-                <li>2K21</li>
-            </ul>
-        </nav>
-
-        <svg style="height: 0; opacity: 0; visibility: hidden;">
-            <filter id="liquify">
-                <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
-                <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
-              </filter>
-        </svg>
+        
 
 
 
