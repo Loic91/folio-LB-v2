@@ -94,6 +94,18 @@ ScrollTrigger.create({
   }),
   // markers: true
 })
+ScrollTrigger.create({
+  trigger: '#bio__7',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__7', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
 
 
 // chaque fois que la fenêtre est mise à jour, nous devons actualiser ScrollTrigger puis mettre à jour LocomotiveScroll. 

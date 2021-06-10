@@ -56,8 +56,8 @@ nav{
 #bio__1{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 }
 .text__bio__1 {
@@ -69,8 +69,8 @@ nav{
 #bio__2{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 
     margin-top: 0;
@@ -84,8 +84,8 @@ nav{
 #bio__3{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 
     margin-top: 0;
@@ -99,8 +99,8 @@ nav{
 #bio__4{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 
     margin-top: 0;
@@ -114,8 +114,8 @@ nav{
 #bio__5{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 
     margin-top: 0;
@@ -129,13 +129,28 @@ nav{
 #bio__6{
     font-family: "GRIFTER";
     font-weight: lighter;
-    font-size: 1.5em; 
-    color: #ccdaee;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
     z-index: 2;
 
     margin-top: 0;
 }
 .text__bio__6 {
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+}
+#bio__7{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 1em; 
+    color: rgb(7, 27, 44);
+    z-index: 2;
+
+    margin-top: 0;
+}
+.text__bio__7 {
     overflow: hidden;
     width: 100%;
     height: 20px;
@@ -177,6 +192,12 @@ nav{
         font-size: 3em;
     }
     .text__bio__6{
+        height: 39px;
+    }
+    #bio__7{
+        font-size: 3em;
+    }
+    .text__bio__7{
         height: 39px;
     }
 }
