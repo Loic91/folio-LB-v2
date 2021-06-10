@@ -11,8 +11,9 @@ main {
     display: block;
 }
 .c-cta h1 {
-    font-family: "ApexMk3";
-    color: #ccdaee;
+    /* font-family: "ApexMk3"; */
+    font-family: "GRIFTER";
+    color: rgb(7, 27, 44);
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -103,23 +104,23 @@ h1 {
     opacity: 1;
 }
 .o-title.is-inview .o-title_line:first-child {
-    transition-delay: 2s;
+    transition-delay: 5.2s;
 }
 .o-title.is-inview .o-title_line:nth-child(2) {
-    transition-delay: 2.1s;
+    transition-delay: 5.3s;
 }
 .o-title.is-inview .o-title_line:nth-child(3) {
-    transition-delay: 2.2s;
+    transition-delay: 5.4s;
 }
 .o-title.is-inview .o-title_line:nth-child(4) {
-    transition-delay: 2.3s;
+    transition-delay: 5.5s;
 }
 
 
 .o-title_line span {
     display: inline-block;
     min-width: 0.05em;
-    font-size: 13.5vw;
+    font-size: 12.5vw;
 }
   
 @media (max-width: 699px){

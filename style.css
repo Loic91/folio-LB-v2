@@ -6,9 +6,13 @@
     font-family: "ApexMk3"; 
     src: url('./FONTS/ApexMk3/Apex\ Mk3-Medium.otf') format('opentype');
 }
+@font-face{
+    font-family: "GRIFTER"; 
+    src: url('./FONTS/GRIFTER/GRIFTER™\ Bold.otf') format('opentype');
+}
 
 html, body {
-    background-color: #031125;
+    background-color: #f7e1b3;
     margin: 0;
     padding: 0;
 }
@@ -18,15 +22,18 @@ section {
 }
 /* ========================================== */
 nav{
-    /* font-family: "New York"; */
-    font-family: "ApexMk3";
-    color: #ccdaee;
+    /* font-family: "ApexMk3"; */
+    font-family: "GRIFTER";
+    color: rgb(7, 27, 44);
 }
 
 li{
     list-style: none;
     font-size: 1.7em;
     margin-left: -20px;
+}
+nav{
+    display: flex;
 }
 .header {
     filter: url("#liquify");
@@ -47,7 +54,7 @@ li{
     /* text-align: right; */
 }
 #bio__1{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;
@@ -60,7 +67,7 @@ li{
     z-index: 1;
 }
 #bio__2{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;
@@ -75,7 +82,7 @@ li{
     z-index: 1;
 }
 #bio__3{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;
@@ -90,7 +97,7 @@ li{
     z-index: 1;
 }
 #bio__4{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;
@@ -105,7 +112,7 @@ li{
     z-index: 1;
 }
 #bio__5{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;
@@ -120,7 +127,7 @@ li{
     z-index: 1;
 }
 #bio__6{
-    font-family: "New York";
+    font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 1.5em; 
     color: #ccdaee;

@@ -1,3 +1,18 @@
+// OVERLAY
+TweenMax.to(".background", 2.4, {
+    delay: 3.2,
+    top: "-100%",
+    ease: Expo.easeInOut
+});
+
+// =================================
+
+
+
+
+
+
+
 gsap.from('#text-0', 1.5, {
     y: '100%',
     delay: 0.9
