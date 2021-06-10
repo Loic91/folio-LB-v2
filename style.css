@@ -55,7 +55,7 @@ li{
 /* ========================================== */
 
 .bio__container{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: -80px;
 }
 #bio__1{
@@ -172,7 +172,7 @@ li{
 
 @media screen and (min-width: 769px){
     .bio__container{
-        margin-left: 10px;
+        margin-left: 45px;
         margin-top: 0px;
     }
     #bio__1{
