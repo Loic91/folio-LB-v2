@@ -50,6 +50,8 @@ li{
         font-size: 2em;
     }
 }
+/* IMG WEBGL================================== */
+
 /* ========================================== */
 
 .bio__container{
@@ -68,7 +70,7 @@ li{
 .text__bio__1 {
     overflow: hidden;
     width: 100%;
-    height: 69px;
+    height: 72px;
     z-index: 1;
 }
 #bio__2{
@@ -84,7 +86,7 @@ li{
 .text__bio__2 {
     overflow: hidden;
     width: 100%;
-    height: 19px;
+    height: 22px;
     z-index: 1;
 }
 #bio__3{
@@ -100,7 +102,7 @@ li{
 .text__bio__3 {
     overflow: hidden;
     width: 100%;
-    height: 20px;
+    height: 23px;
     z-index: 1;
 }
 #bio__4{
@@ -116,7 +118,7 @@ li{
 .text__bio__4 {
     overflow: hidden;
     width: 100%;
-    height: 20px;
+    height: 23px;
     z-index: 1;
 }
 #bio__5{
@@ -132,7 +134,7 @@ li{
 .text__bio__5 {
     overflow: hidden;
     width: 100%;
-    height: 20px;
+    height: 23px;
     z-index: 1;
 }
 #bio__6{
@@ -148,7 +150,7 @@ li{
 .text__bio__6 {
     overflow: hidden;
     width: 100%;
-    height: 20px;
+    height: 23px;
     z-index: 1;
 }
 #bio__7{
@@ -164,7 +166,7 @@ li{
 .text__bio__7 {
     overflow: hidden;
     width: 100%;
-    height: 20px;
+    height: 23px;
     z-index: 1;
 }
 
@@ -173,43 +175,43 @@ li{
         font-size: 3em;
     }
     .text__bio__1{
-        height: 89px;
+        height: 98px;
     }
     #bio__2{
         font-size: 3em;
     }
     .text__bio__2{
-        height: 39px;
+        height: 48px;
     }
     #bio__3{
         font-size: 3em;
     }
     .text__bio__3{
-        height: 39px;
+        height: 48px;
     }
     #bio__4{
         font-size: 3em;
     }
     .text__bio__4{
-        height: 39px;
+        height: 48px;
     }
     #bio__5{
         font-size: 3em;
     }
     .text__bio__5{
-        height: 39px;
+        height: 48px;
     }
     #bio__6{
         font-size: 3em;
     }
     .text__bio__6{
-        height: 39px;
+        height: 48px;
     }
     #bio__7{
         font-size: 3em;
     }
     .text__bio__7{
-        height: 39px;
+        height: 48px;
     }
 }
 

@@ -13,24 +13,36 @@ TweenMax.to(".background", 2.4, {
 
 
 
-gsap.from('#text-0', 1.5, {
+gsap.from('#bio__1', 1.5, {
     y: '100%',
-    delay: 0.9
+    delay: 5.8
 })
 
-gsap.from('#text-1', 1.5, {
+gsap.from('#bio__2', 1.5, {
     y: '100%',
-    delay: 1.2
+    delay: 5.9
 })
 
-gsap.from('#text-2', 1.5, {
+gsap.from('#bio__3', 1.5, {
     y: '100%',
-    delay: 1.5
+    delay: 6
 })
 
-gsap.from('#text-3', 1.5, {
+gsap.from('#bio__4', 1.5, {
     y: '100%',
-    delay: 1.8
+    delay: 6.1
+})
+gsap.from('#bio__5', 1.5, {
+    y: '100%',
+    delay: 6.2
+})
+gsap.from('#bio__6', 1.5, {
+    y: '100%',
+    delay: 6.3
+})
+gsap.from('#bio__7', 1.5, {
+    y: '100%',
+    delay: 6.4
 })
 
 
