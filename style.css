@@ -103,6 +103,9 @@ li{
     padding-top: 10px;
     margin-bottom: -30px;
 }
+.about{
+    font-size: 0.6em;
+}
 @media screen and (min-width: 769px){
     #num__1{
         font-size: 2em;
