@@ -111,6 +111,47 @@ li{
         height: 15px;
     }
 }
+
+/* TEXTE HORIZONTAL =========================================== */
+.content--feature {
+	justify-content: flex-start;
+	min-height: 0;
+}
+.content__breakout {
+	white-space: nowrap;
+	text-transform: uppercase;
+	/* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    color: #000000;
+}
+.content__breakout--big {
+	font-size: 30vw;
+	font-weight: 200;
+}
+.content__breakout--medium {
+	font-size: 20vw;
+}
+.content{
+    margin-top: -150px;
+}
+.folio{
+    margin-top: -170px;
+}
+.b-text{
+    margin-top: 0;
+    z-index: 99;
+}
+@media screen and (min-width: 769px){
+    .content{
+        margin-top: -350px;
+    }
+    .folio{
+        margin-top: -600px;
+    }
+}
+/* =========================================== */
+
+
 /* #bio__2{
     font-family: "GRIFTER";
     font-weight: lighter;
@@ -404,32 +445,7 @@ h1{
 
 
 /* ================================================================= */
-.content--feature {
-	justify-content: flex-start;
-	min-height: 0;
-}
-.content__breakout {
-	margin: 0 -3rem;
-	white-space: nowrap;
-	text-transform: uppercase;
-	font-family: "New York";
-	font-weight: 200;
-	font-style: italic;
-    color: #444133;
-	/* color: rgb(158, 155, 147); */
-}
-.content__breakout--big {
-	font-size: 10vw;
-	font-weight: 200;
-}
-.content__breakout--medium {
-	font-size: 5vw;
-}
 
-.b-text{
-    margin-top: 650px;
-    z-index: 99;
-}
 
 .bloc{
     margin-top: 100px;
