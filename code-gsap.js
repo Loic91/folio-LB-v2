@@ -10,8 +10,8 @@ gsap.from(".box-color", {
     y:100, 
     stagger:0.05, 
     opacity:0, 
-    delay:5.9,
-    duration:3.5, 
+    delay: 5.9,
+    duration:3.7, 
     ease:"power3.out"
   })
 // gsap.to('.box-color', 2.5, {
