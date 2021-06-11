@@ -103,13 +103,13 @@ h1 {
 .o-bio_line span {
     display: inline-block;
     min-width: 0.05em;
-    font-size: 4.5vw;
+    font-size: 4.8vw;
     text-transform: uppercase;
 }
   
 @media (max-width: 699px){
     .o-bio_line span{
         text-transform: uppercase;
-        font-size: 4.6vw;
+        font-size: 4.3vw;
     }
 }
