@@ -34,78 +34,90 @@ ScrollTrigger.create({
     // markers: true
 })
 
-// ScrollTrigger.create({
-//     trigger: '#bio__2',
-//     scroller: '.smooth-scroll',
+ScrollTrigger.create({
+  trigger: '#bio__1',
+  scroller: '.smooth-scroll',
 
-//     start: "top bottom",
-//     end: "top top",
-//     animation: gsap.from('#bio__2', 1.8, {
-//                 y: '100%',
-//                 delay: 0.5,
-//     }),
-//     // markers: true
-// })
-// ScrollTrigger.create({
-//   trigger: '#bio__3',
-//   scroller: '.smooth-scroll',
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__1', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+    trigger: '#bio__2',
+    scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('#bio__3', 1.8, {
-//               y: '100%',
-//               delay: 0.5,
-//   }),
-//   // markers: true
-// })
-// ScrollTrigger.create({
-//   trigger: '#bio__4',
-//   scroller: '.smooth-scroll',
+    start: "top bottom",
+    end: "top top",
+    animation: gsap.from('#bio__2', 1.8, {
+                y: '100%',
+                delay: 0.5,
+    }),
+    // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#bio__3',
+  scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('#bio__4', 1.8, {
-//               y: '100%',
-//               delay: 0.5,
-//   }),
-//   // markers: true
-// })
-// ScrollTrigger.create({
-//   trigger: '#bio__5',
-//   scroller: '.smooth-scroll',
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__3', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#bio__4',
+  scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('#bio__5', 1.8, {
-//               y: '100%',
-//               delay: 0.5,
-//   }),
-//   // markers: true
-// })
-// ScrollTrigger.create({
-//   trigger: '#bio__6',
-//   scroller: '.smooth-scroll',
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__4', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#bio__5',
+  scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('#bio__6', 1.8, {
-//               y: '100%',
-//               delay: 0.5,
-//   }),
-//   // markers: true
-// })
-// ScrollTrigger.create({
-//   trigger: '#bio__7',
-//   scroller: '.smooth-scroll',
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__5', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#bio__6',
+  scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('#bio__7', 1.8, {
-//               y: '100%',
-//               delay: 0.5,
-//   }),
-//   // markers: true
-// })
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__6', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#bio__7',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#bio__7', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
 
 
 // chaque fois que la fenêtre est mise à jour, nous devons actualiser ScrollTrigger puis mettre à jour LocomotiveScroll. 
