@@ -33,50 +33,60 @@ ScrollTrigger.create({
     }),
     // markers: true
 })
+// ScrollTrigger.create({
+//   trigger: '#work',
+//   scroller: '.smooth-scroll',
+
+//   start: "top bottom",
+//   end: "top top",
+//   animation: gsap.from('#work', 1.8, {
+//               y: '100%',
+//               delay: 0.5,
+//   }),
+//   // markers: true
+// })
+
 ScrollTrigger.create({
-  trigger: '#work',
+  trigger: '.mobile1',
   scroller: '.smooth-scroll',
 
-  start: "top bottom",
-  end: "top top",
-  animation: gsap.from('#work', 1.8, {
+  // start: "top bottom",
+  // end: "top top",
+  // start: 'top+=-40% 80%',
+  // end: 'bottom-=20% 50%',
+  start: 'top+=100px 40px',
+  end: 'bottom-=-400px 350px',
+  animation: gsap.from('.mobile1', 1.8, {
               y: '100%',
               delay: 0.5,
   }),
   // markers: true
 })
-
 ScrollTrigger.create({
-  trigger: '#bio__1',
-  scroller: '.smooth-scroll',
-
-  start: "top bottom",
-  end: "top top",
-  animation: gsap.from('#bio__1', 1.8, {
-              y: '100%',
-              delay: 0.5,
-  }),
-  // markers: true
-})
-ScrollTrigger.create({
-    trigger: '#bio__2',
+    trigger: '.mobile2',
     scroller: '.smooth-scroll',
 
-    start: "top bottom",
-    end: "top top",
-    animation: gsap.from('#bio__2', 1.8, {
+    // start: "top bottom",
+    // end: "top top",
+    start: 'top+=100px 40px',
+    end: 'bottom-=-400px 350px',
+    animation: gsap.from('.mobile2', 1.8, {
                 y: '100%',
                 delay: 0.5,
     }),
     // markers: true
 })
 ScrollTrigger.create({
-  trigger: '#bio__3',
+  trigger: '.mobile3',
   scroller: '.smooth-scroll',
 
-  start: "top bottom",
-  end: "top top",
-  animation: gsap.from('#bio__3', 1.8, {
+  // start: "top bottom",
+  // end: "top top",
+  // start: 'top+=-20% 80%',
+  // end: 'bottom-=40% 50%',
+  start: 'top+=100px 40px',
+  end: 'bottom-=-400px 350px',
+  animation: gsap.from('.mobile3', 1.8, {
               y: '100%',
               delay: 0.5,
   }),
