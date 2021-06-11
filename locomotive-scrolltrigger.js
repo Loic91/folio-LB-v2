@@ -33,6 +33,18 @@ ScrollTrigger.create({
     }),
     // markers: true
 })
+ScrollTrigger.create({
+  trigger: '#work',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#work', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
 
 ScrollTrigger.create({
   trigger: '#bio__1',
