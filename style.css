@@ -60,7 +60,9 @@ li{
     margin-left: 20px;
     margin-top: -80px;
 }
-.image_gallery {
+/* Les noms ont été interverti pour permettre l'effet Fade In */
+/* .image_gallery { */
+.box-color {
     background-image: url("./img/md-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,18 +76,14 @@ li{
     height: 100%;
     z-index: -1;
 } 
-.box-color {
+/* .box-color { */
+.image_gallery {
     background-color: #e6dfd2;
     overflow: hidden;
     width: 320px;
     height: 300px;
 }
-/* .image_gallery img {
-    width: 80%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 30px;
-} */
+
 #bio__1{
     font-family: "GRIFTER";
     font-weight: lighter;

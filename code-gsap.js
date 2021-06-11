@@ -6,10 +6,18 @@ TweenMax.to(".background", 2.4, {
 });
 
 // =================================
-gsap.to('.box-color', 2.5, {
-    y: '-100%',
-    delay: 5.9
-})
+gsap.from(".box-color", {
+    y:100, 
+    stagger:0.05, 
+    opacity:0, 
+    delay:5.9,
+    duration:3.5, 
+    ease:"power3.out"
+  })
+// gsap.to('.box-color', 2.5, {
+//     y: '-100%',
+//     delay: 5.9
+// })
 gsap.from('#bio__1', 1.5, {
     y: '100%',
     delay: 5.8
