@@ -280,7 +280,7 @@ li{
 
     padding-top: 10px;
     margin-left: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 .work{
     font-size: 0.7em;
@@ -292,10 +292,71 @@ li{
     .text__num__2{
         height: 69px;
         margin-top: 100px;
-        margin-bottom: 150px;
+        margin-bottom: 180px;
     }
 }
-/* =================================================== */
+
+/* PRESENTATION PROJETS ================================ */
+.projects__top{
+    display: flex;
+    margin-top: -150px;
+}
+.box_img_one {
+    background-image: url("./img/ben2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    width: 180px;
+    height: 100%;
+    z-index: -1;
+} 
+.box_img_two {
+    background-image: url("./img/flower_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    width: 180px;
+    height: 100%;
+    z-index: -1;
+}
+/* .box-color { */
+.img {
+    background-color: #e6dfd2;
+    overflow: hidden;
+    width: 180px;
+    height: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+@media screen and (min-width: 769px){
+    .box_img_one, .box_img_two {
+        width: 550px;
+        height: 100%;
+    }
+    .img{
+        width: 550px;
+        height: 600px;
+        margin-top: 50px;
+    }
+
+    .projects__top{
+        margin-top: -250px;
+    }
+}
+/* =========== */
+
 
 
 
