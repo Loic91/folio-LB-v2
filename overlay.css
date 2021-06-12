@@ -32,12 +32,6 @@
 	overflow: hidden;
 	width: 100%;
 }
-.rw-sentence span{
-	color: #444;
-	white-space: nowrap;
-	font-size: 200%;
-	font-weight: normal;
-}
 .rw-words-2 span{
 	/* animation: rotateWordsSecond 5s linear infinite 0s; */
     animation: rotateWordsSecond 5s;
