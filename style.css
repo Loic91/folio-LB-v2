@@ -134,7 +134,7 @@ li{
 .wrapper__img{
 	width: 100%;
 	position: absolute;
-    font-size : 0.8vh;
+    font-size : 0.9vh;
     margin-left: -20px;
     background-color: transparent;
 }
@@ -301,6 +301,11 @@ li{
     display: flex;
     margin-top: -150px;
 }
+.projects__bottom{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
 .box_img_one {
     background-image: url("./img/ben2.jpg");
     background-repeat: no-repeat;
@@ -327,6 +332,32 @@ li{
     height: 100%;
     z-index: -1;
 }
+.box_img_three {
+    background-image: url("./img/photographer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    width: 180px;
+    height: 100%;
+    z-index: -1;
+}
+.box_img_four {
+    background-image: url("./img/md-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    width: 180px;
+    height: 100%;
+    z-index: -1;
+}
 /* .box-color { */
 .img {
     background-color: #e6dfd2;
@@ -341,7 +372,7 @@ li{
 }
 
 @media screen and (min-width: 769px){
-    .box_img_one, .box_img_two {
+    .box_img_one, .box_img_two, .box_img_three, .box_img_four {
         width: 550px;
         height: 100%;
     }
@@ -353,6 +384,21 @@ li{
 
     .projects__top{
         margin-top: -250px;
+    }
+    .projects__bottom{
+        margin-top: -100px;
+    }
+}
+
+/* TEXTE DYNAMIQUE PROJETS ===== */
+.projects__img{
+    margin-left: -5px;
+    font-size: 0.45em;
+}
+
+@media screen and (min-width: 769px){
+    .projects__img{
+        font-size: 3.5em;
     }
 }
 /* =========== */
