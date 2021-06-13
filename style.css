@@ -213,7 +213,7 @@ li{
 
 
 
-/* TEXTE HORIZONTAL =========================================== */
+/* TEXTE HORIZONTAL 1 =========================================== */
 .content--feature {
 	justify-content: flex-start;
 	min-height: 0;
@@ -223,14 +223,11 @@ li{
 	text-transform: uppercase;
 	/* font-family: "GRIFTER"; */
     font-family: 'Mukta', sans-serif;
-    color: #000000;
+    color: #75613b;
 }
 .content__breakout--big {
-	font-size: 30vw;
+	font-size: 6em;
 	font-weight: 200;
-}
-.content__breakout--medium {
-	font-size: 20vw;
 }
 .content{
     margin-top: -150px;
@@ -238,18 +235,56 @@ li{
 .folio{
     margin-top: -190px;
 }
+.contact{
+    margin-top: 50px;
+}
 .b-text{
     margin-top: 0;
     z-index: 99;
 }
 @media screen and (min-width: 769px){
     .b-text{
-        margin-top: -500px;
+        margin-top: -300px;
+    }
+    .content__breakout--big {
+        font-size: 15em;
     }
     .folio{
         margin-top: -650px;
     }
 }
+/* TEXTE HORIZONTAL 2 =========================================== */
+.content--feature_2 {
+	justify-content: flex-start;
+	min-height: 0;
+}
+.content__breakout_2 {
+	white-space: nowrap;
+	text-transform: uppercase;
+	/* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    color: #75613b;
+}
+.content__breakout--big_2 {
+	font-size: 6em;
+	font-weight: 200;
+}
+.content_2{
+    margin-top: 0px;
+}
+.b-text_2{
+    margin-top: 170px;
+    z-index: 99;
+}
+@media screen and (min-width: 769px){
+    .b-text_2{
+        margin-top: 600px;
+    }
+    .content__breakout--big_2 {
+        font-size: 15em;
+    }
+}
+
 /* BODYMOVIN ========================================= */
 #bodymovin{
     width: 15%;
@@ -278,7 +313,7 @@ li{
     height: 35px;
     z-index: 1;
 
-    padding-top: 10px;
+    padding-top: 50px;
     margin-left: 20px;
     margin-bottom: 180px;
 }
@@ -303,7 +338,7 @@ li{
 }
 .projects__bottom{
     display: flex;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 .box_img_one {
@@ -363,7 +398,7 @@ li{
     background-color: #e6dfd2;
     overflow: hidden;
     width: 180px;
-    height: 150px;
+    height: 250px;
 
     margin-left: auto;
     margin-right: auto;
@@ -401,7 +436,108 @@ li{
         font-size: 3.5em;
     }
 }
-/* =========== */
+/* TEXTE en DESSOUS DES PHOTOS ===== */
+.projects_text{
+    display: flex;
+}
+#text_n1{
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    z-index: 1;
+
+    padding-top: -15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+#text_n2{
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text_2 {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    z-index: 1;
+
+    padding-top: -35px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+#text_n3{
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text_3 {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    z-index: 1;
+
+    margin-top: -200px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+#text_n4{
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text_4 {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    z-index: 1;
+
+    margin-top: -180px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 769px){
+    #text_n1, #text_n2, #text_n3, #text_n4{
+        font-size: 1.2em;
+    }
+    .text_1{
+        height: 43px;
+        margin-top: -10px;
+        margin-left: 45px;
+    }
+    .text_2{
+        height: 43px;
+        margin-top: -100px;
+        margin-bottom: 180px;
+        margin-left: 80px;
+    }
+    .text_3{
+        height: 43px;
+        margin-top: -230px;
+        margin-left: 45px;
+    }
+    .text_4{
+        height: 43px;
+        margin-top: -210px;
+        margin-left: 45px;
+    }
+}
 
 
 

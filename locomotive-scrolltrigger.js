@@ -46,6 +46,55 @@ ScrollTrigger.create({
   // markers: true
 })
 
+ScrollTrigger.create({
+  trigger: '#text_n1',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#text_n1', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#text_n2',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#text_n2', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#text_n3',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#text_n3', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#text_n4',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#text_n4', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+
 
 // ScrollTrigger.create({
 //   trigger: '#bio__4',
