@@ -179,7 +179,6 @@
 
             <div class="b-text_2">
                 <div class="content_2 content--feature_2">
-
                     <p class="content__breakout_2 content__breakout--big_2 folio" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >
                         21 
                     </p>
@@ -428,7 +427,11 @@
             tablet: { smooth: true },
 
             // for mobile
-            smartphone: { smooth: true }
+            smartphone: { smooth: true, 
+                            multiplier: { number: 3 //Augmente le vitesse de défilement du scroll
+                            } 
+                        },
+            
         });
     </script>
 
