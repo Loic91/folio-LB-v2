@@ -65,6 +65,15 @@
 .o-bio.is-inview .o-bio_line:nth-child(7) {
     transition-delay: 0.8s;
 }
+.o-bio.is-inview .o-bio_line:nth-child(8) {
+    transition-delay: 0.9s;
+}
+.o-bio.is-inview .o-bio_line:nth-child(9) {
+    transition-delay: 1s;
+}
+.o-bio.is-inview .o-bio_line:nth-child(10) {
+    transition-delay: 1.1s;
+}
 
 
 .o-bio_line span {
@@ -155,15 +164,7 @@
 .o-bio__2.is-inview .o-bio_line__2:nth-child(7) {
     transition-delay: 0.8s;
 }
-.o-bio__2.is-inview .o-bio_line__2:nth-child(8) {
-    transition-delay: 0.9s;
-}
-.o-bio__2.is-inview .o-bio_line__2:nth-child(9) {
-    transition-delay: 1s;
-}
-.o-bio__2.is-inview .o-bio_line__2:nth-child(10) {
-    transition-delay: 1.1s;
-}
+
 
 
 .o-bio_line__2 span {
