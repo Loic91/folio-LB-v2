@@ -74,12 +74,16 @@ li{
 .about{
     font-size: 0.7em;
 }
-.biography__container{
-    display: none;
+
+@media screen and (max-width: 768px){
+    .biography__container{
+        display: none;
+    }
+    .biography__container__2{
+        display: none;
+    }
 }
-.biography__container__2{
-    display: none;
-}
+
 .biography__container__mobile{
     margin-top: -980px;
     margin-left: 10px;
@@ -89,6 +93,13 @@ li{
     margin-left: 10px;
 }
 @media screen and (min-width: 769px){
+    .biography__container__mobile{
+        display: none;
+    }
+    .biography__container__2__mobile{
+        display: none;
+    }
+
     .biography__container{
         margin-top: -2100px;
         z-index: 99;
@@ -261,10 +272,6 @@ li{
     z-index: -99;
 }
 @media screen and (min-width: 769px){
-    .b-text{
-        
-        /* margin-top: -300px; */
-    }
     .content__breakout--big {
         font-size: 70em;
         margin-top: -300px;
@@ -347,13 +354,13 @@ li{
     }
     .text__num__2{
         height: 69px;
-        margin-top: 100px;
-        margin-bottom: 180px;
+        margin-top: 600px;
+        margin-bottom: -150px;
     }
 }
 
 /* PRESENTATION PROJETS ================================ */
-.projects__top{
+/* .projects__top{
     display: flex;
     margin-top: -150px;
 }
@@ -368,8 +375,6 @@ li{
     background-size: cover;
     overflow: hidden;
     position: relative;
-    /* margin-left: auto;
-    margin-right: auto; */
 
     width: 180px;
     height: 100%;
@@ -381,8 +386,6 @@ li{
     background-size: cover;
     overflow: hidden;
     position: relative;
-    /* margin-left: auto;
-    margin-right: auto; */
 
     width: 180px;
     height: 100%;
@@ -394,8 +397,6 @@ li{
     background-size: cover;
     overflow: hidden;
     position: relative;
-    /* margin-left: auto;
-    margin-right: auto; */
 
     width: 180px;
     height: 100%;
@@ -407,14 +408,11 @@ li{
     background-size: cover;
     overflow: hidden;
     position: relative;
-    /* margin-left: auto;
-    margin-right: auto; */
 
     width: 180px;
     height: 100%;
     z-index: -1;
 }
-/* .box-color { */
 .img {
     background-color: #e6dfd2;
     overflow: hidden;
@@ -444,10 +442,10 @@ li{
     .projects__bottom{
         margin-top: -100px;
     }
-}
+} */
 
 /* TEXTE DYNAMIQUE PROJETS ===== */
-.projects__img{
+/* .projects__img{
     margin-left: -5px;
     font-size: 0.45em;
 }
@@ -456,9 +454,9 @@ li{
     .projects__img{
         font-size: 3.5em;
     }
-}
+} */
 /* TEXTE en DESSOUS DES PHOTOS ===== */
-.projects_text{
+/* .projects_text{
     display: flex;
 }
 #text_n1{
@@ -558,225 +556,10 @@ li{
         margin-top: -210px;
         margin-left: 45px;
     }
-}
-
-
-
-
-
-
-
-/* #bio__2{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__2 {
-    overflow: hidden;
-    width: 100%;
-    height: 22px;
-    z-index: 1;
-}
-#bio__3{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__3 {
-    overflow: hidden;
-    width: 100%;
-    height: 23px;
-    z-index: 1;
-}
-#bio__4{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__4 {
-    overflow: hidden;
-    width: 100%;
-    height: 23px;
-    z-index: 1;
-}
-#bio__5{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__5 {
-    overflow: hidden;
-    width: 100%;
-    height: 23px;
-    z-index: 1;
-}
-#bio__6{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__6 {
-    overflow: hidden;
-    width: 100%;
-    height: 23px;
-    z-index: 1;
-}
-#bio__7{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 1em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    padding-top: 10px;
-    margin-top: 0;
-}
-.text__bio__7 {
-    overflow: hidden;
-    width: 100%;
-    height: 23px;
-    z-index: 1;
-}
-@media screen and (max-width: 768px){
-    .bio__container__xl{
-        display: none;
-    }
-}
-@media screen and (min-width: 769px){
-    .bio__container{
-        display: none;
-    }
-    .bio__container__xl{
-        margin-left: 45px;
-        margin-top: 0px;
-    }
-    #bio__1{
-        font-size: 2em;
-    }
-    .text__bio__1{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__2{
-        font-size: 2em;
-    }
-    .text__bio__2{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__3{
-        font-size: 2em;
-    }
-    .text__bio__3{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__4{
-        font-size: 2em;
-    }
-    .text__bio__4{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__5{
-        font-size: 2em;
-    }
-    .text__bio__5{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__6{
-        font-size: 2em;
-    }
-    .text__bio__6{
-        height: 57px;
-        margin-bottom: -30px;
-    }
-    #bio__7{
-        font-size: 2em;
-    }
-    .text__bio__7{
-        height: 57px;
-        margin-bottom: -30px;
-    }
 } */
 
-/* WORK CONTAINER ===================================== */
-.work__container{
-    margin-left: 20px;
-}
-#work{
-    font-family: "GRIFTER";
-    font-weight: lighter;
-    font-size: 6.5em; 
-    color: rgb(0, 0, 0);
-    z-index: 2;
-
-    margin-top: 100px;
-}
-.text__work {
-    overflow: hidden;
-    width: 100%;
-    height: 183px;
-    z-index: 1;
-}
-@media screen and (max-width: 768px){
-    .work__container-xl{
-        display: none;
-    }
-}
-@media screen and (min-width: 769px){
-    .work__container{
-        display: none;
-    }
-    .work__container-xl{
-        margin-left: 45px;
-    }
-    #work-xl{
-        font-family: "GRIFTER";
-        font-weight: lighter;
-        font-size: 15em; 
-        color: rgb(0, 0, 0);
-        z-index: 2;
-    
-        margin-top: 100px;
-    }
-    .text__work-xl {
-        overflow: hidden;
-        width: 100%;
-        height: 291px;
-        z-index: 1;
-    }
-}
-/* ==================================================== */
 
 
-/* ========================================================================================================================================================================================================================================================================================================================================================================================================================== */
 
 
 

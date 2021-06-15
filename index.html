@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="locomotive-scroll.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="bio.css">
     <link rel="stylesheet" href="overlay.css">
     <link rel="stylesheet" href="title.css">
@@ -95,7 +96,7 @@
             <div class="b-text">
                 <div class="content content--feature">
                     </p>
-                    <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
+                    <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" >
                         20 
                     </p>
                 </div>
@@ -234,18 +235,52 @@
             </div>
 
 
-             
-
-
-            <!-- <div id="bodymovin" data-scroll data-scroll-speed="3.5"></div> -->
+            
 
 
             <div class="text__num__2" data-scroll data-scroll-speed="3">
                 <p id="num__2">00-2/ <span class="work">WORK</span></p>
             </div>
 
+            <!-- PROJETS ========================================== -->
+            <div class="container__work">
+                <div id="wrap-texture">
+                    <!-- div that will hold our WebGL canvas -->
+                    <div id="canvas"></div>
+              
+                    <!-- div used to create our plane -->
+                    <div class="plane">
+              
+                      <!-- images that will be used as textures by our plane -->
+                      <img class="texture" src="img/coiffure.jpg" crossorigin="anonymous" />
+                      <img class="texture" src="img/flower.jpg" crossorigin="anonymous" />
+                      <img class="texture" src="img/photographer_2.jpg" crossorigin="anonymous" />
+                      <img class="texture" src="img/chair-2.jpg" crossorigin="anonymous" />
+                    </div>
+                  </div>
+              
+                  <nav class="nav-main">
+                    <ul>
+                      <li><span class="first-menu">PASSION COIFFURE</span><span class="second-menu">PASSION COIFFURE</span></li>
+                      <li><span class="first-menu">INTERFLOWER</span><span class="second-menu">INTERFLOWER</span></li>
+                      <li><span class="first-menu">JOHN DOE</span><span class="second-menu">JOHN DOE</span></li>
+                      <li><span class="first-menu">LUXY</span><span class="second-menu">LUXY</span></li>
+                    </ul>
+                  </nav>
+            </div>
+            <!-- ================================================== -->
+
+
+
+
+
+
+
+
+
+
             
-            <div class="projects__top">
+            <!-- <div class="projects__top">
 
                 <div class="image_gallery img" data-scroll data-scroll-speed="2">
                     <div class="box-color box_img_one">
@@ -325,46 +360,19 @@
                 <div class="text_4" data-scroll data-scroll-speed="4">
                     <p id="text_n4">LEARNING MORE <i class="far fa-arrow-alt-circle-right"></i></span></p>
                 </div>
-            </div>
+            </div> -->
 
 
 
 
             <div class="b-text">
                 <div class="content content--feature">
-                    <!-- <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >
-                        No.001 / No.001 / No.001 / No.001 / No.001 / No.001 / 
-                    </p> -->
 
-                    <p class="content__breakout content__breakout--big contact" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
-                        CONTACT / CONTACT / CONTACT / CONTACT / CONTACT / CONTACT / 
+                    <p class="content__breakout content__breakout--big contact" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" >
+                        WORK / WORK / WORK / WORK / WORK / WORK / 
                     </p>
                 </div>
             </div>
-
-
-        
-
-
-            
-
-
-
-
-
-
-
-            <!-- <div class="work__container">
-                <div class="text__work">
-                    <h1 id="work">WORK</h1>
-                </div>
-            </div>
-            <div class="work__container-xl">
-                <div class="text__work-xl">
-                    <h1 id="work-xl">WORK</h1>
-                </div>
-            </div> -->
-
             
     
 
@@ -443,7 +451,7 @@
 
 
 
-
+    <script src='https://rawcdn.githack.com/martinlaxenaire/curtainsjs/95957f855ad9fd51850e97312cd389af76e9704e/build/curtains.min.js'></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
@@ -454,6 +462,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 
+    <script src="work.js"></script>
     <script src="bm.js"></script>
     <script src="img-bio.js"></script>
     <script src="app.js"></script>
