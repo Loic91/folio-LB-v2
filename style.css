@@ -74,9 +74,13 @@ li{
 .about{
     font-size: 0.7em;
 }
+.biography__container{
+    margin-top: -1000px;
+}
 @media screen and (min-width: 769px){
     .biography__container{
-        margin-top: 0px;
+        margin-top: -2700px;
+        z-index: 99;
     }
     #num__1{
         font-size: 2em;
@@ -223,11 +227,14 @@ li{
 	text-transform: uppercase;
 	/* font-family: "GRIFTER"; */
     font-family: 'Mukta', sans-serif;
-    color: #75613b;
+    /* color: #75613b; */
+    color: grey;
 }
 .content__breakout--big {
-	font-size: 6em;
+    color: rgba(255, 0, 0, 0.377);
+	font-size: 30em;
 	font-weight: 200;
+    margin-top: -210px;
 }
 .content{
     margin-top: -150px;
@@ -240,17 +247,20 @@ li{
 }
 .b-text{
     margin-top: 0;
-    z-index: 99;
+    z-index: -99;
 }
 @media screen and (min-width: 769px){
     .b-text{
-        margin-top: -300px;
+        
+        /* margin-top: -300px; */
     }
     .content__breakout--big {
-        font-size: 15em;
+        font-size: 70em;
+        margin-top: -200px;
+        /* font-size: 15em; */
     }
     .folio{
-        margin-top: -650px;
+        margin-bottom: 0px;
     }
 }
 /* TEXTE HORIZONTAL 2 =========================================== */
