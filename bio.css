@@ -77,7 +77,7 @@
 @media (max-width: 699px){
     .o-bio_line span{
         text-transform: uppercase;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
 
@@ -110,7 +110,7 @@
     .biography__container__2 {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
-      margin-top: 150px;
+      margin-top: -1000px;
     }
 }
 
@@ -167,7 +167,7 @@
 @media (max-width: 699px){
     .o-bio_line__2 span{
         text-transform: uppercase;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
 

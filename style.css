@@ -75,11 +75,22 @@ li{
     font-size: 0.7em;
 }
 .biography__container{
-    margin-top: -1000px;
+    display: none;
+}
+.biography__container__2{
+    display: none;
+}
+.biography__container__mobile{
+    margin-top: -950px;
+    margin-left: 10px;
+}
+.biography__container__2__mobile{
+    margin-top: -900px;
+    margin-left: 10px;
 }
 @media screen and (min-width: 769px){
     .biography__container{
-        margin-top: -2700px;
+        margin-top: -2100px;
         z-index: 99;
     }
     #num__1{
@@ -225,19 +236,19 @@ li{
 .content__breakout {
 	white-space: nowrap;
 	text-transform: uppercase;
-	/* font-family: "GRIFTER"; */
-    font-family: 'Mukta', sans-serif;
+	font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
     /* color: #75613b; */
-    color: grey;
+    /* color: grey; */
 }
 .content__breakout--big {
     color: rgba(255, 0, 0, 0.377);
 	font-size: 30em;
 	font-weight: 200;
-    margin-top: -210px;
+    margin-top: -100px;
 }
 .content{
-    margin-top: -150px;
+    margin-top: 0px;
 }
 .folio{
     margin-top: -190px;
@@ -256,7 +267,7 @@ li{
     }
     .content__breakout--big {
         font-size: 70em;
-        margin-top: -200px;
+        margin-top: -300px;
         /* font-size: 15em; */
     }
     .folio{
@@ -271,12 +282,12 @@ li{
 .content__breakout_2 {
 	white-space: nowrap;
 	text-transform: uppercase;
-	/* font-family: "GRIFTER"; */
-    font-family: 'Mukta', sans-serif;
-    color: #75613b;
+	font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    color: rgba(255, 0, 0, 0.377);
 }
 .content__breakout--big_2 {
-	font-size: 6em;
+	font-size: 30em;
 	font-weight: 200;
 }
 .content_2{
@@ -288,10 +299,10 @@ li{
 }
 @media screen and (min-width: 769px){
     .b-text_2{
-        margin-top: 600px;
+        margin-top: 200px;
     }
     .content__breakout--big_2 {
-        font-size: 15em;
+        font-size: 70em;
     }
 }
 
