@@ -81,7 +81,7 @@ li{
     display: none;
 }
 .biography__container__mobile{
-    margin-top: -950px;
+    margin-top: -980px;
     margin-left: 10px;
 }
 .biography__container__2__mobile{
@@ -245,7 +245,7 @@ li{
     color: rgba(255, 0, 0, 0.377);
 	font-size: 30em;
 	font-weight: 200;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 .content{
     margin-top: 0px;
