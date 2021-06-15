@@ -341,9 +341,9 @@ li{
     height: 35px;
     z-index: 1;
 
-    padding-top: 50px;
+    padding-top: 150px;
     margin-left: 20px;
-    margin-bottom: 180px;
+    margin-bottom: 0px;
 }
 .work{
     font-size: 0.7em;
