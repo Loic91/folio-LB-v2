@@ -2,6 +2,12 @@
     font-family: Altero;
     src: url(https://cdn.statically.io/gh/AlainBarrios/Fonts/c2f23223de197bbfd1adc66709be92f65c16b571/Altero-Regular.otf?raw=true);
   }
+@font-face{
+    font-family: "Le Grand Amour"; 
+    src: url('./fonts/Le\ Grand\ Amour/PS-LeGrandAmour-Regular.otf') format('opentype');
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
   
   /* make the body fits our viewport */
   /* .container { */
@@ -74,10 +80,11 @@
   .nav-main li {
     display: grid;
     grid-template-areas: "center";
-    font-family: Altero;
+    /* font-family: Altero; */
+    font-family: "GRIFTER";
     cursor: pointer;
     font-size: 1.3rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
   
   .nav-main span {
@@ -88,7 +95,7 @@
     z-index: 10;
   }
   
-  .nav-main li:hover .second-menu {
+  /* .nav-main li:hover .second-menu {
     transform: translate3d(0, 100%, 0);
     opacity: 1;
   }
@@ -98,9 +105,10 @@
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     opacity: 0;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
-  }
+    font-family: 'Mukta', sans-serif;
+  } */
   
   @media screen and (min-width: 600px) {
     .nav-main ul {
@@ -118,5 +126,75 @@
   @media screen and (min-width: 800px) {
     .nav-main li {
       font-size: 1.7rem;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .nav__link {
+    font-size: 5rem;
+    color: #fff;
+    display: grid;
+    /* font-style: italic; */
+  }
+  .nav__link--text {
+    grid-area: 1/1;
+    transition: opacity 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95), transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  .nav__link--text .word {
+    white-space: nowrap;
+  }
+  .nav__link--text .char {
+    display: inline-block;
+    transform-origin: 50% 50% 0.4em;
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+    transition-delay: calc(0ms + var(--char-index) * 25ms);
+    backface-visibility: hidden;
+    margin: 0 -0.02em;
+  }
+  .nav__link--text:nth-child(1) {
+    /* font-family: "Playfair Display"; */
+    font-family: "GRIFTER";
+    font-weight: 500;
+  }
+  .nav__link--text:nth-child(2) {
+    /* font-family: "Roboto"; */
+    font-family: "GRIFTER";
+    font-weight: 500;
+    opacity: 0;
+  }
+  .nav__link--text:nth-child(2) .char {
+    transform: rotate3d(1, -0.5, 0, 90deg);
+  }
+  .nav__link:hover .nav__link--text {
+    transform: translateX(var(--link-translate-x));
+  }
+  .nav__link:hover .nav__link--text:nth-child(1) {
+    opacity: 0;
+  }
+  .nav__link:hover .nav__link--text:nth-child(1) .char {
+    transform: rotate3d(1, 0.3, 0, -90deg);
+  }
+  .nav__link:hover .nav__link--text:nth-child(2) {
+    opacity: 1;
+  }
+  .nav__link:hover .nav__link--text:nth-child(2) .char {
+    transform: rotate3d(0, 0, 0, 90deg);
+  }
+  
+  @media only screen and (max-width: 20rem) {
+    :root {
+      font-size: 10px;
+      --link-translate-x: 2rem;
     }
   }

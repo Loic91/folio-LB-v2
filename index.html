@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="locomotive-scroll.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="bio.css">
     <link rel="stylesheet" href="overlay.css">
@@ -264,17 +266,21 @@
               
                 <nav class="nav-main">
                     <ul>
-                        <li><span class="first-menu">INTERFLOWER</span>
-                            <span class="second-menu">INTERFLOWER</span>
+                        <li class="nav__link">
+                            <span class="first-menu nav__link--text" data-splitting>INTERFLOWER</span>
+                            <span class="second-menu nav__link--text" data-splitting>INTERFLOWER</span>
                         </li>
-                        <li><span class="first-menu">PASSION COIFFURE</span>
-                            <span class="second-menu">PASSION COIFFURE</span>
+                        <li class="nav__link">
+                            <span class="first-menu nav__link--text" data-splitting>PASSION COIFFURE</span>
+                            <span class="second-menu nav__link--text" data-splitting>PASSION COIFFURE</span>
                         </li>
-                        <li><span class="first-menu">JOHN DOE</span>
-                            <span class="second-menu">JOHN DOE</span>
+                        <li class="nav__link">
+                            <span class="first-menu nav__link--text" data-splitting>JOHN DOE</span>
+                            <span class="second-menu nav__link--text" data-splitting>JOHN DOE</span>
                         </li>
-                        <li><span class="first-menu">LUXY</span>
-                            <span class="second-menu">LUXY</span>
+                        <li class="nav__link">
+                            <span class="first-menu nav__link--text" data-splitting>LUXY</span>
+                            <span class="second-menu nav__link--text" data-splitting>LUXY</span>
                         </li>
                     </ul>
                 </nav>
@@ -458,7 +464,12 @@
 
 
 
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<script>
+    console.clear();
 
+    Splitting();
+</script>
 
 
 
@@ -473,6 +484,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 
+    
     <script src="work.js"></script>
     <script src="bm.js"></script>
     <script src="img-bio.js"></script>

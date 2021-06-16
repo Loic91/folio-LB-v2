@@ -67,7 +67,7 @@ li{
     height: 6px;
     z-index: 1;
 
-    padding-top: 15px;
+    padding-top: 25px;
     margin-left: 20px;
     margin-bottom: -15px;
 }
@@ -110,6 +110,7 @@ li{
     }
     .text__num__1{
         height: 15px;
+        margin-top: 150px;
     }
 }
 
@@ -374,10 +375,14 @@ li{
         font-size: 2em;
     }
     .text__num__2{
-        height: 69px;
+        height: 88px;
         margin-top: 600px;
         margin-bottom: -150px;
     }
+    #num__2_1{
+        display: none;
+    }
+
 }
 
 /* PRESENTATION PROJETS ================================ */
