@@ -140,9 +140,15 @@
 
 
 
-
+  a {
+    text-decoration: none;
+  }
+  a:focus {
+    outline: none;
+    border: none;
+  }
   .nav__link {
-    font-size: 5rem;
+    font-size: 2rem;
     color: #fff;
     display: grid;
     /* font-style: italic; */

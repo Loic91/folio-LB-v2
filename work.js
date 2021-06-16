@@ -3,7 +3,7 @@ const mathUtils = {
   };
   
   window.onload = () => {
-    const navMain = [...document.querySelectorAll(".nav-main li")];
+    const navMain = [...document.querySelectorAll(".nav-main a")];
     let currentIndex = 0;
     let lastIndex = 0;
     let textureActive = "";
