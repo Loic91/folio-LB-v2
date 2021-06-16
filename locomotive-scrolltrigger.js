@@ -45,6 +45,18 @@ ScrollTrigger.create({
   }),
   // markers: true
 })
+ScrollTrigger.create({
+  trigger: '#num__2_1',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#num__2_1', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
 
 ScrollTrigger.create({
   trigger: '#text_n1',

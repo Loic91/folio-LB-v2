@@ -64,15 +64,16 @@ li{
 .text__num__1 {
     overflow: hidden;
     width: 100%;
-    height: 12px;
+    height: 6px;
     z-index: 1;
 
-    padding-top: 10px;
+    padding-top: 15px;
     margin-left: 20px;
     margin-bottom: -15px;
 }
 .about{
-    font-size: 0.7em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
@@ -338,7 +339,7 @@ li{
 .text__num__2 {
     overflow: hidden;
     width: 100%;
-    height: 35px;
+    height: 45px;
     z-index: 1;
 
     padding-top: 150px;
@@ -346,7 +347,27 @@ li{
     margin-bottom: 0px;
 }
 .work{
-    font-size: 0.7em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#num__2_1{
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 0.8em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text__num__2_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 27px;
+    z-index: 1;
+
+    padding-top: 5px;
+    margin-top: -35px;
+    margin-left: 20px;
+    margin-bottom: 0px;
 }
 @media screen and (min-width: 769px){
     #num__2{
