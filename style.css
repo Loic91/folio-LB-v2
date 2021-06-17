@@ -144,8 +144,8 @@ li{
 .image_gallery {
     background-color: #e6dfd2;
     overflow: hidden;
-    width: 350px;
-    height: 300px;
+    /* width: 350px;
+    height: 300px; */
 
     margin-left: auto;
     margin-right: auto;
@@ -233,7 +233,7 @@ li{
         width: 120%;
         position: absolute;
         font-family: 'Mukta', sans-serif;
-        font-size : 1.8vh;
+        font-size : 2.3vh;
         background-color: transparent;
         margin-left: -20px;
     }
@@ -396,6 +396,7 @@ li{
 /* =================================================== */
 .bloc_contact{
     background-color: rgba(255, 0, 0, 0.377);
+    height: 100vh;
 }
 #num__3{
     /* font-family: "GRIFTER"; */
@@ -447,7 +448,8 @@ li{
     }
     
     .o-container_contact{
-        padding-top: -1750px;
+        padding-top: 0px;
+        padding-bottom: 500px;
     }
 }
 
@@ -470,7 +472,7 @@ li{
       padding-left: 20px;
 
       margin-top: -900px;
-      padding-bottom: 400px;
+      /* padding-bottom: 400px; */
     }
 }
 @media (min-width: 700px) {
@@ -520,7 +522,7 @@ li{
 .o-title_line_contact span {
     display: inline-block;
     min-width: 0.05em;
-    font-size: 6vw;
+    font-size: 5vw;
 }
   
 @media (max-width: 699px){
