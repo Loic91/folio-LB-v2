@@ -67,7 +67,7 @@ li{
     height: 6px;
     z-index: 1;
 
-    padding-top: 15px;
+    padding-top: 24px;
     margin-left: 20px;
     margin-top: -20px;
     margin-bottom: 25px;
@@ -122,6 +122,11 @@ li{
 }
 /* Les noms ont été interverti pour permettre l'effet Fade In */
 /* .image_gallery { */
+@media screen and (max-width: 768px){
+    .image_gallery{
+        display: none;
+    }
+}
 .box-color {
     background-image: url("./img/md-1.jpg");
     background-repeat: no-repeat;
@@ -149,6 +154,9 @@ li{
 }
 
 @media screen and (min-width: 769px){
+    #screen{
+        display: none;
+    }
     .box-color {
         width: 550px;
         height: 100%;
