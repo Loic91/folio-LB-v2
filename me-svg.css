@@ -1,0 +1,73 @@
+.me_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#wave-1{
+    background-color: black;
+}
+  
+  #screen, .page, #waves {
+    width: 360px;
+    height: 440px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #screen .page, #waves {
+    position: absolute;
+  }
+  
+  #page-01 {
+    background: url("img/md-1.jpg") center center;
+    background-size: cover;
+  }
+  
+  #page-02 {
+    background: url("img/md-1.jpg") center center;
+    background-size: cover;
+  }
+  
+  #waves {
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  #waves svg {
+    position: absolute;
+    opacity: 0.6;
+    left: 360px;
+    /* animation: kf-wipe 5s ease-in-out infinite alternate; */
+    animation: kf-wipe 5s ease-in-out;
+    animation-delay: 5s;
+  }
+  
+  svg#wave-1 {
+    opacity: 1;
+  }
+  
+  @keyframes kf-wipe {
+    0% {
+      top: 640px;
+      left: 0;
+    }
+    100% {
+      top: -800px;
+      left: -6840px;
+    }
+  }
+  #page-02 {
+    display: none;
+    top: 640px;
+    /* animation: kf-dissolve 1.5s step(1, end) infinite alternate; */
+    animation: kf-dissolve 1.5s step(1, end);
+  }
+  
+  @keyframes kf-dissolve {
+    to {
+      top: 0px;
+    }
+  }

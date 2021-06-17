@@ -190,11 +190,11 @@ li{
 	animation-delay: 2.3s; 
 	color: rgb(255, 254, 254);	
 }
-/* .rw-words__img span:nth-child(4) { 
+.rw-words__img span:nth-child(4) { 
 	animation-delay: 3.3s; 
 	color: rgb(255, 255, 255);
 }
-.rw-words__img span:nth-child(5) { 
+/* .rw-words__img span:nth-child(5) { 
 	animation-delay: 4.3s; 
 	color: rgb(255, 255, 255);
 }

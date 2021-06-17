@@ -6,14 +6,22 @@ TweenMax.to(".background", 2.4, {
 });
 
 // =================================
-gsap.from(".box-color", {
+gsap.from(".me_container", {
     y:100, 
     stagger:0.05, 
     opacity:0, 
     delay: 5.9,
     duration:3.7, 
     ease:"power3.out"
-  })
+})
+// gsap.from(".box-color", {
+//     y:100, 
+//     stagger:0.05, 
+//     opacity:0, 
+//     delay: 5.9,
+//     duration:3.7, 
+//     ease:"power3.out"
+// })
 gsap.to('#num__1', 2.5, {
     y: '-100%',
     delay: 6
