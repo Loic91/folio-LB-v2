@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+
+    <link rel="stylesheet" href="text-roll.css">
     <link rel="stylesheet" href="me-svg.css">
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="bio.css">
@@ -35,7 +37,7 @@
     </div>
     <!-- ===================================== -->
 
-    <div class="smooth-scroll" data-scroll-container>
+    <div class="smooth-scroll scrollx" data-scroll-container>
 
         <div data-scroll-section>
 
@@ -119,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 
                 <div class="b-text">
@@ -328,77 +331,101 @@
             <!-- ================================================== -->
 
         <!-- </div>
-
-
-
         <div data-scroll-section> -->
 
-            <div class="text__num__3">
-                <p id="num__3">00-3/ <span class="contact">CONTACT</span></p>
+
+            <div id="roll">
+                <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 136">
+                    <defs>
+                    <path ref="circlePath" id="circlePath" d="M7,69a60,60 0 1,0 120,0a60,60 0 1,0 -120,0"></path>
+                    </defs>
+                    <g>
+                    <!-- <text x="50%" y="50%" class="button-letter-center" id="letter">A</text> -->
+                
+                    <text ref="textCurved" id="textCurved" fill="#000">
+                        <textPath side="right" ref="pathTextCurved" id="pathTextCurved" xlink:href="#circlePath">
+                        <tspan class="button-curved-en">• Let's work together</tspan>
+                        <tspan class="button-curved-jpn">• 0/001</tspan>
+                        </textPath>
+                    </text>
+                
+                    <circle id="circle" ref="circle" cx="67" cy="69" r="60" fill="transparent"></circle>
+                    </g>
+                </svg>
             </div>
 
 
+            
+            <div class="bloc_contact">
 
-            <!-- <div class="b-text">
-                <div class="content content--feature">
-
-                    <p class="content__breakout content__breakout--big contact" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" >
-                        WORK / WORK / WORK / WORK / WORK / WORK / 
-                    </p>
+                <div class="text__num__3">
+                    <p id="num__3">00-3/ <span class="contact">CONTACT</span></p>
                 </div>
-            </div> -->
+
+
+
+                <!-- <div class="b-text">
+                    <div class="content content--feature">
+
+                        <p class="content__breakout content__breakout--big contact" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" >
+                            WORK / WORK / WORK / WORK / WORK / WORK / 
+                        </p>
+                    </div>
+                </div> -->
             
     
 
         
         
 
-            <!-- <div class="invisible_text">
-                <div class="text-display-0" data-scroll data-scroll-speed="2">
-                    <h1 id="text-0">INFO</h1>
-                </div>
+                <!-- <div class="invisible_text">
+                    <div class="text-display-0" data-scroll data-scroll-speed="2">
+                        <h1 id="text-0">INFO</h1>
+                    </div>
 
-                <div class="text-display-1" data-scroll data-scroll-speed="2">
-                    <h1 id="text-1">TWT</h1>
-                </div>
+                    <div class="text-display-1" data-scroll data-scroll-speed="2">
+                        <h1 id="text-1">TWT</h1>
+                    </div>
 
-                <div class="text-display-2" data-scroll data-scroll-speed="2">
-                    <h1 id="text-2">BEH</h1>
-                </div>
+                    <div class="text-display-2" data-scroll data-scroll-speed="2">
+                        <h1 id="text-2">BEH</h1>
+                    </div>
 
-                <div class="text-display-3" data-scroll data-scroll-speed="2">
-                    <h1 id="text-3">EMAIL</h1>
-                </div>
-            </div> -->
+                    <div class="text-display-3" data-scroll data-scroll-speed="2">
+                        <h1 id="text-3">EMAIL</h1>
+                    </div>
+                </div> -->
             
 
         
-            <div class="b-text_3">
-                <div class="content content--feature">
-                    <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
-                        L.B.
-                    </p>
+                <div class="b-text_3">
+                    <div class="content content--feature">
+                        <p class="content__breakout content__breakout--big color_contact" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
+                            L.B.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="o-container_contact">
-                <div class="c-cta_contact">
-                    <h3 class="o-title_contact" data-scroll>
-                        <span class="o-title_line_contact">
-                            <span class="collaborate">LET'S COLLABORATE</span>
-                        </span>
-                        <span class="o-title_line_contact">
-                            <span>HELLO@LOIC-BRIJAWI.COM</span>
-                        </span>
-                        <span class="o-title_line_contact">
-                            <span>TWITTER</span>
-                        </span>
-                        <span class="o-title_line_contact">
-                            <span>BEHANCE</span>
-                        </span>
-                    </h3>
-                    <!-- <hr class="c-cta_line" data-scroll data-scroll-offset="100" /> -->
+                <div class="o-container_contact">
+                    <div class="c-cta_contact">
+                        <h3 class="o-title_contact" data-scroll>
+                            <span class="o-title_line_contact">
+                                <span class="collaborate">LET'S COLLABORATE</span>
+                            </span>
+                            <span class="o-title_line_contact">
+                                <span>HELLO@LOIC-BRIJAWI.COM</span>
+                            </span>
+                            <span class="o-title_line_contact">
+                                <span>TWITTER</span>
+                            </span>
+                            <span class="o-title_line_contact">
+                                <span>BEHANCE</span>
+                            </span>
+                        </h3>
+                        <!-- <hr class="c-cta_line" data-scroll data-scroll-offset="100" /> -->
+                    </div>
                 </div>
+
             </div>
 
 
@@ -446,7 +473,6 @@
 </script>
 
 
-
     <script src='https://rawcdn.githack.com/martinlaxenaire/curtainsjs/95957f855ad9fd51850e97312cd389af76e9704e/build/curtains.min.js'></script>
 
 
@@ -458,7 +484,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 
+
     
+    
+    <script src="text-roll.js"></script>
     <script src="work.js"></script>
     <script src="bm.js"></script>
     <script src="img-bio.js"></script>
