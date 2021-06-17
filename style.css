@@ -506,6 +506,9 @@ li{
     padding-top: 480px;
 } */
 
+.b-text_3{
+    margin-top: 680px;
+}
 @media screen and (min-width: 769px){
     .b-text_3 {
         margin-top: 650px;
@@ -559,9 +562,6 @@ li{
     }
 }
 
-.b-text_3{
-    margin-top: 650px;
-}
 /* ========================= */
 .c-cta_contact h3 {
     /* font-family: "ApexMk3"; */
