@@ -415,7 +415,7 @@ li{
     padding-top: 10px;
     margin-left: 20px;
     margin-top: -50px;
-    margin-bottom: -700px;
+    margin-bottom: -750px;
 }
 .contact{
     font-size: 1.5em;
@@ -514,6 +514,24 @@ li{
 .o-title_contact.is-inview .o-title_line_contact:nth-child(4) {
     transition-delay: 1.5s;
 }
+.o-title_contact.is-inview .o-title_line_contact:nth-child(5) {
+    transition-delay: 1.6s;
+}
+.o-title_contact.is-inview .o-title_line_contact:nth-child(6) {
+    transition-delay: 1.7s;
+}
+.o-title_contact.is-inview .o-title_line_contact:nth-child(7) {
+    transition-delay: 1.8s;
+}
+.o-title_contact.is-inview .o-title_line_contact:nth-child(8) {
+    transition-delay: 1.9s;
+}
+.o-title_contact.is-inview .o-title_line_contact:nth-child(9) {
+    transition-delay: 2s;
+}
+.o-title_contact.is-inview .o-title_line_contact:nth-child(10) {
+    transition-delay: 2.1s;
+}
 
 
 .o-title_line_contact .collaborate{
@@ -526,11 +544,18 @@ li{
 }
   
 @media (max-width: 699px){
+    .o-title_line_contact .collaborates{
+        font-size: 8vw;
+        margin-bottom: 15px;
+    }
     .o-title_line_contact .collaborate{
-        font-size: 7vw;
+        font-size: 6vw;
     }
     .o-title_line_contact span{
-        font-size: 5vw;
+        font-size: 4vw;
+    }
+    .contact_space{
+        margin-top: 30px;
     }
 }
 
