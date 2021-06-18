@@ -89,7 +89,7 @@
 }
 
 /* NUMBERS =================================== */
-.numbers{
+/* .numbers{
     display: flex;
     font-family: 'Mukta', sans-serif;
     color: rgb(0, 0, 0);
@@ -98,9 +98,6 @@
     transform: translate(-50%, -50%);
     position: absolute;
 }
-/* .numbers b{
-    font-size: 20px;
-} */
 .numbers span{
     height: 40px;
     text-align: right;
@@ -152,4 +149,16 @@
     .numbers span{
         font-size: 20px;
     }
+} */
+
+
+.loader .loader-counter h1 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
