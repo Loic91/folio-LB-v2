@@ -106,7 +106,7 @@
     text-align: right;
     display: inline-block;
     line-height: 40px;
-    font-size: 30px;
+    font-size: 20px;
     overflow: hidden;
 }
 .numbers span::before{
@@ -148,5 +148,8 @@
     .numbers{
         top: 10%;
         left: 90%;
+    }
+    .numbers span{
+        font-size: 20px;
     }
 }
