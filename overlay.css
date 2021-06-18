@@ -88,69 +88,7 @@
     }
 }
 
-/* NUMBERS =================================== */
-/* .numbers{
-    display: flex;
-    font-family: 'Mukta', sans-serif;
-    color: rgb(0, 0, 0);
-    top: 4%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.numbers span{
-    height: 40px;
-    text-align: right;
-    display: inline-block;
-    line-height: 40px;
-    font-size: 20px;
-    overflow: hidden;
-}
-.numbers span::before{
-    position: relative;
-    content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
-    white-space: pre;
-}
-.numbers span.first__numbers::before{
-    animation: text 0.4s steps(10);
-    animation-iteration-count: 10;
-}
-.numbers span.second__numbers::before{
-    animation: text 4s steps(10);
-}
-.numbers span.third__numbers::before{
-    animation: text1 100s steps(1);
-}
-@keyframes text{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: -400px;
-    }
-}
-@keyframes text1{
-    0%{
-        top: 0;
-    }
-    10%{
-        top: -40px;
-    }
-}
-.container__numbers:hover span::before{
-    animation-play-state: paused;
-}
-
-@media screen and (min-width: 769px){
-    .numbers{
-        top: 10%;
-        left: 90%;
-    }
-    .numbers span{
-        font-size: 20px;
-    }
-} */
-
+/* NUMBERS (+ loader.js)=================================== */
 
 .loader .loader-counter h1 {
     font-family: 'Mukta', sans-serif;

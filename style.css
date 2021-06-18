@@ -76,8 +76,12 @@ li{
     font-size: 1.5em;
     font-weight: bold;
 }
-
-@media screen and (max-width: 768px){
+@media screen and (min-width: 700px){
+    .bio{
+        margin-top: -1250px;
+    }
+}
+@media screen and (max-width: 999px){
     .biography__container{
         display: none;
     }
@@ -94,7 +98,7 @@ li{
     margin-top: -900px;
     margin-left: 10px;
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1000px){
     .biography__container__mobile{
         display: none;
     }
@@ -122,7 +126,7 @@ li{
 }
 /* Les noms ont été interverti pour permettre l'effet Fade In */
 /* .image_gallery { */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
     .image_gallery{
         display: none;
     }
@@ -282,7 +286,13 @@ li{
     margin-top: 0;
     z-index: -99;
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 700px){
+    .content__breakout--big {
+        font-size: 40em;
+        margin-top: -100px;
+    }
+}
+@media screen and (min-width: 1000px){
     .content__breakout--big {
         font-size: 70em;
         margin-top: -300px;
@@ -315,7 +325,18 @@ li{
     margin-top: 170px;
     z-index: 99;
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 700px){
+    .b-text_2{
+        margin-top: 200px;
+    }
+    .content__breakout--big_2 {
+        font-size: 40em;
+    }
+    .bio__2{
+        margin-top: -1150px;
+    }
+}
+@media screen and (min-width: 1000px){
     .b-text_2{
         margin-top: 200px;
     }
