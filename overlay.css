@@ -119,7 +119,7 @@
     animation-iteration-count: 10;
 }
 .numbers span.second__numbers::before{
-    animation: text 4.6s steps(10);
+    animation: text 4.4s steps(10);
 }
 .numbers span.third__numbers::before{
     animation: text1 100s steps(1);
