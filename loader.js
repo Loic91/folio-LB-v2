@@ -10,5 +10,5 @@ $(document).ready(function(){
       if(counter == 101){
         clearInterval(i);
       }
-    },30);
+    },20);
     });

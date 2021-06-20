@@ -17,20 +17,7 @@ main {
     font-size: 2em;
     margin: 0.67em 0;
 }
-/* hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
 
-hr {
-    display: block;
-    margin: 1em 0;
-    padding: 0;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #272727;
-} */
 .o-h,
 .o-h1,
 h1
@@ -104,16 +91,16 @@ h1 {
     opacity: 1;
 }
 .o-title.is-inview .o-title_line:first-child {
-    transition-delay: 5.2s;
+    transition-delay: 7.7s;
 }
 .o-title.is-inview .o-title_line:nth-child(2) {
-    transition-delay: 5.3s;
+    transition-delay: 7.8s;
 }
 .o-title.is-inview .o-title_line:nth-child(3) {
-    transition-delay: 5.4s;
+    transition-delay: 7.9s;
 }
 .o-title.is-inview .o-title_line:nth-child(4) {
-    transition-delay: 5.5s;
+    transition-delay: 8s;
 }
 
 

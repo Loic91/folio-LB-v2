@@ -9,21 +9,34 @@
     z-index: 99;
 }
   
-.background {
+/* .background {
     background: #e6dfd2;
-}
+} */
 
 #wwrapper{
     display: flex;
 }
-
+/* anime.js =================== */
+.wave-1, .wave-2 {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 170vh;
+    width: 100%;
+    padding-bottom: -650px;
+}
+  
+.overlay svg {
+    width: 100%;
+}
 /* ============ */
 
 .wrapper{
 	width: 100%;
 	position: absolute;
     font-size : 2vh;
-    background-color: #e6dfd2;
+    /* background-color: #e6dfd2; */
+    background-color: #000000;
 }
 .wrapper h2{
     font-family: 'Mukta', sans-serif;
@@ -42,23 +55,23 @@
 }
 .rw-words span:nth-child(2) { 
 	animation-delay: 1s; 
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(3) { 
 	animation-delay: 2.3s; 
-	color: rgb(0, 0, 0);	
+	color: rgb(255, 255, 255);	
 }
 .rw-words span:nth-child(4) { 
 	animation-delay: 3.3s; 
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(5) { 
 	animation-delay: 4.3s; 
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(6) {  
 	animation-delay: 5.3s; 
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 @keyframes rotateWordsSecond {
     0% { opacity: 2; animation-timing-function: ease-out; width: 0px; }
@@ -75,7 +88,8 @@
         position: absolute;
         font-family: 'Roboto';
         font-size : 4vh;
-        background-color: #e6dfd2;
+        /* background-color: #e6dfd2; */
+        background-color: #000000;
     }
 
     .rw-words span{
@@ -97,6 +111,6 @@
     top: 4%;
     left: 90%;
     transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }

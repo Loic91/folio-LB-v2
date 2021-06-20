@@ -13,7 +13,7 @@ const sceneAuthorLiquid = new ScrollMagic.Scene({
       scale: '0'
     },
     ease: Power4.easeOut,
-    delay: 4.4,
+    delay: 5.9,
   })
   .reverse(false)
   .addTo(controller);

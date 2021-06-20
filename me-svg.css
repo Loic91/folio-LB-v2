@@ -42,7 +42,7 @@
     left: 360px;
     /* animation: kf-wipe 5s ease-in-out infinite alternate; */
     animation: kf-wipe 5s ease-in-out;
-    animation-delay: 5s;
+    animation-delay: 7.5s;
   }
   
   svg#wave-1 {
