@@ -5,7 +5,7 @@
 //     ease: Expo.easeInOut
 // });
 TweenMax.to(".overlay", 7.1, {
-    delay: 1.5,
+    delay: 1.8,
     top: "-300%",
     ease: Expo.easeInOut
 });

@@ -21,9 +21,9 @@
     position: absolute;
     /* top: 0;
     left: 0; */
-    height: 200vh;
+    height: 180vh;
     width: 100%;
-    padding-bottom: -150px;
+    /* padding-bottom: -120px; */
 }
   
 .overlay svg {
@@ -58,19 +58,19 @@
 	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(3) { 
-	animation-delay: 2.3s; 
+	animation-delay: 2s; 
 	color: rgb(255, 255, 255);	
 }
 .rw-words span:nth-child(4) { 
-	animation-delay: 3.3s; 
+	animation-delay: 3s; 
 	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(5) { 
-	animation-delay: 4.3s; 
+	animation-delay: 3s; 
 	color: rgb(255, 255, 255);
 }
 .rw-words span:nth-child(6) {  
-	animation-delay: 5.3s; 
+	animation-delay: 4s; 
 	color: rgb(255, 255, 255);
 }
 @keyframes rotateWordsSecond {
