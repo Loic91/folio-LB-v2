@@ -91,16 +91,16 @@ h1 {
     opacity: 1;
 }
 .o-title.is-inview .o-title_line:first-child {
-    transition-delay: 7.7s;
+    transition-delay: 6.7s;
 }
 .o-title.is-inview .o-title_line:nth-child(2) {
-    transition-delay: 7.8s;
+    transition-delay: 6.8s;
 }
 .o-title.is-inview .o-title_line:nth-child(3) {
-    transition-delay: 7.9s;
+    transition-delay: 6.9s;
 }
 .o-title.is-inview .o-title_line:nth-child(4) {
-    transition-delay: 8s;
+    transition-delay: 7s;
 }
 
 

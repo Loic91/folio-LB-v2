@@ -343,6 +343,9 @@ li{
     .content__breakout--big_2 {
         font-size: 70em;
     }
+    .bio__2{
+        margin-top: 50px;
+    }
 }
 
 /* BODYMOVIN ========================================= */
@@ -444,6 +447,9 @@ li{
 }
 
 @media screen and (min-width: 769px){
+    .bloc_contact{
+        height: 100vh;
+    }
     #num__3{
         font-size: 2em;
     }
@@ -470,7 +476,8 @@ li{
     
     .o-container_contact{
         padding-top: 0px;
-        padding-bottom: 500px;
+        margin-bottom: 500px;
+        height: 100vh;
     }
 }
 
@@ -478,7 +485,7 @@ li{
 .c-cta_contact h3 {
     /* font-family: "ApexMk3"; */
     font-family: "GRIFTER";
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0)
     /* font-size: 2em; */
     /* margin: 0.67em 0; */
 }
@@ -493,7 +500,9 @@ li{
       padding-left: 20px;
 
       margin-top: -900px;
-      /* padding-bottom: 400px; */
+    }
+    .contact_space{
+        margin-top: 30px;
     }
 }
 @media (min-width: 700px) {
@@ -501,9 +510,13 @@ li{
       padding-right: 2.5rem;
       padding-left: 2.5rem;
 
-      /* margin-bottom: 300px; */
+      margin-top: -1400px;
+    }
+    .contact_space{
+        margin-top: 50px;
     }
 }
+
 
 .o-title_contact {
     margin: 0;
@@ -569,7 +582,7 @@ li{
     font-size: 5vw;
 }
   
-@media (max-width: 699px){
+@media (min-width: 799px){
     .o-title_line_contact .collaborates{
         font-size: 8vw;
         margin-bottom: 15px;
@@ -582,6 +595,35 @@ li{
     }
     .contact_space{
         margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .bloc_contact{
+        height: 150vh;
+    }
+    .contact_space{
+        margin-top: 50px;
+    }
+    .o-title_line_contact span{
+        font-size: 4vw;
+    }
+    .collaborates{
+        margin-top: 900px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .bloc_contact{
+        height: 200vh;
+    }
+    .contact_space{
+        margin-top: 50px;
+    }
+    .o-title_line_contact span{
+        font-size: 4vw;
+    }
+    .collaborates{
+        margin-top: -400px;
     }
 }
 

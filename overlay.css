@@ -114,3 +114,10 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
+
+@media screen and (min-width: 769px){
+    .loader .loader-counter h1{
+        top: 9%;
+        font-size: 35px;
+    }
+}
