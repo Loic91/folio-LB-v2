@@ -1,0 +1,65 @@
+@font-face{
+    font-family: "ApexMk3"; 
+    src: url('./FONTS/ApexMk3/Apex\ Mk3-Medium.otf') format('opentype');
+}
+@font-face{
+    font-family: "GRIFTER"; 
+    src: url('./FONTS/GRIFTER/GRIFTER™\ Bold.otf') format('opentype');
+}
+
+html, body {
+    background-color: #e6dfd2;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV ======================================= */
+nav{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    color: rgb(0, 0, 0);
+}
+
+li{
+    list-style: none;
+    font-size: 1.2em;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+.li__right{
+    text-align: right;
+}
+.header {
+    filter: url("#liquify");
+    opacity: 0;
+    text-align: left;
+    /* text-align: center;
+    transform: translateY(50px); */
+
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 769px){
+    li{
+        font-size: 2em;
+    }
+}
+/* ============================================== */
+.img_one{
+    text-align: center;
+}
+.passion_one{
+    width: 330px;
+    margin-top: -70px;
+}
+@media screen and (min-width: 700px){
+    .passion_one{
+        width:650px;
+        margin-top: -70px;
+    }
+}
+@media screen and (min-width: 900px){
+    .passion_one{
+        max-width: 900px;
+    }
+}
