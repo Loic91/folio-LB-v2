@@ -4,7 +4,7 @@
 //     top: "-100%",
 //     ease: Expo.easeInOut
 // });
-TweenMax.to(".overlay", 7.5, {
+TweenMax.to(".overlay", 6.1, {
     delay: 1.8,
     top: "-210%",
     ease: Expo.easeInOut

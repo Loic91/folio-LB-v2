@@ -21,9 +21,9 @@
     position: absolute;
     /* top: 0;
     left: 0; */
-    height: 180vh;
+    height: 200vh;
     width: 100%;
-    padding-bottom: -650px;
+    padding-bottom: -150px;
 }
   
 .overlay svg {
