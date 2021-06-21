@@ -15,7 +15,7 @@ gsap.from(".me_container", {
     y:100, 
     stagger:0.05, 
     opacity:0, 
-    delay: 7.9,
+    delay: 6.9,
     duration:3.7, 
     ease:"power3.out"
 })
