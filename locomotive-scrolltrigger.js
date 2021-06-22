@@ -168,6 +168,71 @@ ScrollTrigger.create({
   // markers: true
 })
 
+// ===============================================================================================================================================================================================================================================================================================================================================================================================================
+//PAGE PROJECT-ONE ===========================================
+
+ScrollTrigger.create({
+  trigger: '#passion__1',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#passion__1', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#passion__2',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#passion__2', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#passion__3',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#passion__3', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '#passion__4',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('#passion__4', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '.box-color',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.to('.box-color', 2.8, {
+              y: '-100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+// ===============================================================================================================================================================================================================================================================================================================================================================================================================
+
 
 
 

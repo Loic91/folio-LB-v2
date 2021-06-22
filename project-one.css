@@ -72,76 +72,191 @@ li{
     font-family: "GRIFTER";
     /* font-family: 'Mukta', sans-serif; */
     font-weight: lighter;
-    font-size: 3.5em; 
+    font-size: 1.5em; 
     color: rgb(0, 0, 0);
     z-index: 2;  
 }
 .text__passion_1 {
     overflow: hidden;
     width: 100%;
-    height: 101px;
+    height: 43px;
     z-index: 1;
 
-    margin-top: -300px;
-    text-align: center;
+    margin-top: -350px;
+    text-align: left;
+    margin-left: 30px;
 }
 #passion__2{
     font-family: "GRIFTER";
     /* font-family: 'Mukta', sans-serif; */
     font-weight: lighter;
-    font-size: 3.5em; 
+    font-size: 1.5em; 
     color: rgb(0, 0, 0);
     z-index: 2;  
 }
 .text__passion_2 {
     overflow: hidden;
     width: 100%;
-    height: 101px;
+    height: 43px;
     z-index: 1;
 
-    margin-top: -30px;
-    text-align: center;
+    margin-top: -25px;
+    text-align: left;
+    margin-left: 30px;
 }
 #passion__3{
     font-family: "GRIFTER";
     /* font-family: 'Mukta', sans-serif; */
     font-weight: lighter;
-    font-size: 2em; 
+    font-size: 1.5em; 
     color: rgb(0, 0, 0);
     z-index: 2;  
 }
 .text__passion_3 {
     overflow: hidden;
     width: 100%;
-    height: 58px;
+    height: 43px;
     z-index: 1;
 
-    margin-top: 0px;
-    text-align: center;
+    margin-top: -25px;
+    text-align: left;
+    margin-left: 30px;
+}
+#passion__4{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text__passion_4 {
+    overflow: hidden;
+    width: 100%;
+    height: 43px;
+    z-index: 1;
+
+    margin-top: -25px;
+    text-align: left;
+    margin-left: 30px;
 }
 @media screen and (min-width: 700px){
     #passion__1{
-        font-size: 5em;
+        font-size: 2.5em;
     }
     .text__passion_1{
-        height: 145px;
-        margin-top: 200px;
+        height: 72px;
+        margin-top: -350px;
+        text-align: left;
         margin-left: 50px;
     }
     #passion__2{
-        font-size: 5em;
+        font-size: 2.5em;
     }
     .text__passion_2{
-        height: 145px;
-        margin-top: -100px;
+        height: 72px;
+        margin-top: -25px;
+        text-align: left;
+        margin-left: 50px;
+    }
+    #passion__3{
+        font-size: 2.5em;
+    }
+    .text__passion_3{
+        height: 72px;
+        margin-top: -25px;
+        text-align: left;
+        margin-left: 50px;
+    }
+    #passion__4{
+        font-size: 2.5em;
+    }
+    .text__passion_4{
+        height: 72px;
+        margin-top: -25px;
+        text-align: left;
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width: 900px){
+    #passion__1{
+        font-size: 3em;
+    }
+    .text__passion_1{
+        height: 88px;
+        margin-top: 300px;
+        text-align: left;
+        margin-left: 150px;
+    }
+    #passion__2{
+        font-size: 3em;
+    }
+    .text__passion_2{
+        height: 88px;
+        margin-top: -40px;
+        text-align: left;
         margin-left: 150px;
     }
     #passion__3{
-        font-size: 5em;
+        font-size: 3em;
     }
     .text__passion_3{
-        height: 145px;
-        margin-top: -50px;
-        margin-left: 250px;
+        height: 88px;
+        margin-top: -40px;
+        text-align: left;
+        margin-left: 150px;
+    }
+    #passion__4{
+        font-size: 3em;
+    }
+    .text__passion_4{
+        height: 88px;
+        margin-top: -40px;
+        text-align: left;
+        margin-left: 150px;
+    }
+}
+
+
+.image {
+    background-image: url("./img-portfolio/passion-coiffure-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+    position: relative;
+
+    width: 350px;
+    height:100%;
+    z-index: -1;
+} 
+.box-color {
+    background-color: #e6dfd2;
+    overflow: hidden;
+    width: 350px;
+    height: 700px;
+}
+@media screen and (min-width: 700px){
+    .image{
+        margin-top: 100px;
+        width: 700px;
+        height:100%;
+    }
+    .box-color{
+        width: 700px;
+        height: 500px;
+    }
+}
+@media screen and (min-width: 900px){
+    .image{
+        width: 1200px;
+        height:100%;
+    }
+    .box-color{
+        width: 1200px;
+        height: 700px;
     }
 }
