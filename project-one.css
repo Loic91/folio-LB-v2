@@ -277,6 +277,7 @@ li{
         margin-left: auto;
         margin-right: 50px;
         margin-top: 60px;
+    }
 }
 @media screen and (min-width: 900px){
     .text_bloc__one{
