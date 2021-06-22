@@ -12,6 +12,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.section{
+    height: 100vh;
+}
 
 /* NAV ======================================= */
 nav{
@@ -62,5 +65,83 @@ li{
 @media screen and (min-width: 900px){
     .passion_one{
         width: 900px;
+    }
+}
+/* ====================================== */
+#passion__1{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    font-weight: lighter;
+    font-size: 3.5em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text__passion_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 101px;
+    z-index: 1;
+
+    margin-top: -500px;
+    text-align: center;
+}
+#passion__2{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    font-weight: lighter;
+    font-size: 3.5em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text__passion_2 {
+    overflow: hidden;
+    width: 100%;
+    height: 101px;
+    z-index: 1;
+
+    margin-top: -30px;
+    text-align: center;
+}
+#passion__3{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    font-weight: lighter;
+    font-size: 2em; 
+    color: rgb(0, 0, 0);
+    z-index: 2;  
+}
+.text__passion_3 {
+    overflow: hidden;
+    width: 100%;
+    height: 58px;
+    z-index: 1;
+
+    margin-top: -90px;
+    text-align: center;
+}
+@media screen and (min-width: 700px){
+    #passion__1{
+        font-size: 5em;
+    }
+    .text__passion_1{
+        height: 145px;
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+    #passion__2{
+        font-size: 5em;
+    }
+    .text__passion_2{
+        height: 145px;
+        margin-top: -100px;
+        margin-left: 150px;
+    }
+    #passion__3{
+        font-size: 5em;
+    }
+    .text__passion_3{
+        height: 145px;
+        margin-top: -50px;
+        margin-left: 250px;
     }
 }
