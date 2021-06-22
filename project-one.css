@@ -45,21 +45,22 @@ li{
     }
 }
 /* ============================================== */
-.img_one{
+.o-title{
     text-align: center;
 }
 .passion_one{
     width: 330px;
-    margin-top: -70px;
 }
 @media screen and (min-width: 700px){
     .passion_one{
         width:650px;
-        margin-top: -70px;
+    }
+    .o-title{
+        text-align: center;
     }
 }
 @media screen and (min-width: 900px){
     .passion_one{
-        max-width: 900px;
+        width: 900px;
     }
 }
