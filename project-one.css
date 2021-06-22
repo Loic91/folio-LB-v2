@@ -217,6 +217,7 @@ li{
     }
 }
 
+/* ============================================================= */
 
 .image {
     background-image: url("./img-portfolio/passion-coiffure-1.png");
@@ -258,5 +259,31 @@ li{
     .box-color{
         width: 1200px;
         height: 700px;
+    }
+}
+
+/* ========================================================= */
+
+.text_bloc__one{
+    font-size: 1.3em;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+@media screen and (min-width: 700px){
+    .text_bloc__one{
+        font-size: 1.5em;
+        width: 400px;
+        margin-left: auto;
+        margin-right: 50px;
+        margin-top: 60px;
+}
+@media screen and (min-width: 900px){
+    .text_bloc__one{
+        font-size: 2.1em;
+        width: 700px;
+        margin-left: auto;
+        margin-right: 150px;
+        margin-top: 0px;
     }
 }
