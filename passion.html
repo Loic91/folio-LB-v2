@@ -95,76 +95,76 @@
                 <div id="planes">
 
                     <div class="plane-wrapper">
-                        <span class="plane-title passion_text_first">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span class="plane-title">Title 1</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-0.jpg" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-0.jpg" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 2</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-1.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-1.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 3</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-2.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-2.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 4</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-3.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-3.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 5</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-4.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-4.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 6</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-5.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-5.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 7</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-6.png" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-6.png" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
-
-                    <div class="plane-wrapper">
+                      </div>
+              
+                      <div class="plane-wrapper">
                         <span class="plane-title">Title 8</span>
                         <div class="plane-inner">
-                            <div class="plane">
-                                <img src="../img-portfolio/passion-coiffure-0.jpg" crossorigin="" data-sampler="planeTexture" />
-                            </div>
+                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
+                            <img src="img-portfolio/passion-coiffure-0.jpg" data-sampler="planeTexture" />
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
                 </div>
             </div>
@@ -172,9 +172,95 @@
         </div>
     </div>
 
-    <script src="js/locomotive-scroll.min.js" type="text/javascript"></script>
-    <script src="js/multiple.planes.parallax.setup.js" type="module"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+    <script id="multiple-planes-vs" type="x-shader/x-vertex">
+        #ifdef GL_ES
+                  precision mediump float;
+                  #endif
+      
+                  // default mandatory variables
+                  attribute vec3 aVertexPosition;
+                  attribute vec2 aTextureCoord;
+      
+                  uniform mat4 uMVMatrix;
+                  uniform mat4 uPMatrix;
+      
+                  uniform mat4 planeTextureMatrix;
+      
+                  // custom variables
+                  varying vec3 vVertexPosition;
+                  varying vec2 vTextureMatrixCoord;
+      
+                  uniform float uScrollEffect;
+      
+                  void main() {
+      
+                      vec3 vertexPosition = aVertexPosition;
+      
+                      // cool effect on scroll
+                      vertexPosition.x += sin((vertexPosition.y / 1.5 + 1.0) * 3.141592) * (sin(uScrollEffect / 2000.0));
+      
+                         gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+      
+                         // varyings
+                         vVertexPosition = vertexPosition;
+                         vTextureMatrixCoord = (planeTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+                  }
+              </script>
+      <script id="multiple-planes-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+                  precision mediump float;
+                  #endif
+      
+                  varying vec3 vVertexPosition;
+                  varying vec2 vTextureCoord;
+                  varying vec2 vTextureMatrixCoord;
+      
+                  uniform sampler2D planeTexture;
+      
+                  void main( void ) {
+                      // slides transitions
+                      vec4 finalColor = texture2D(planeTexture, vTextureMatrixCoord);
+      
+                      gl_FragColor = finalColor;
+                  }
+        </script>
+      
+        <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.3.9/dist/locomotive-scroll.min.js'></script>
+        <script src='https://www.martin-laxenaire.fr/libs/curtainsjs/build/curtains.js'>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // <script src="js/locomotive-scroll.min.js" type="text/javascript"></script>
+    <!-- <script src="js/multiple.planes.parallax.setup.js" type="module"></script> -->
+
+    <script src="locomotive-scroll.min.js" type="text/javascript"></script>
     <script>
         const scroll = new LocomotiveScroll({
             // el: document.querySelector('[data-scroll-container]'),
@@ -202,7 +288,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
 
-    <script src="./dist/curtains.umd.min.js"></script>
+    <script src="passion.js"></script>
     <script src="nav.js"></script>
     <script src="overlay.js"></script>
     <script src="code-gsap.js"></script>
