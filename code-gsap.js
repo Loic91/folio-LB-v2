@@ -35,11 +35,11 @@ gsap.to('#num__1', 2.5, {
 // ============================
 gsap.from('#passion__1', 2.5, {
     y: '100%',
-    delay: 6
+    delay: 5
 })
 gsap.from('#passion__2', 2.5, {
     y: '100%',
-    delay: 6.5
+    delay: 5.5
 })
 // ==========================
 // gsap.from('#work', 1.5, {
