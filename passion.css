@@ -227,13 +227,14 @@
     }
 
     #debug {
-        position: fixed;
+        display: none;
+        /* position: fixed;
         bottom: 0;
         right: 0;
         background: white;
         font-size: 0.9em;
         padding: 0.25em 0.5em;
-        z-index: 10;
+        z-index: 10; */
     }
 
     #planes {
