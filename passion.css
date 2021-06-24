@@ -134,6 +134,108 @@ li{
     }
 }
 
+
+/* *** TEXT *********************************** */
+#passion__text_1{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 0, 0);
+    z-index: 2;  
+}
+.text__entreprise_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 38px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: 0px;
+}
+#passion__text_2{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 0, 0);
+    z-index: 2;  
+}
+.text__entreprise_2 {
+    overflow: hidden;
+    width: 100%;
+    height: 39px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: 0px;
+}
+#passion__text_3{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 0, 0);
+    z-index: 2;  
+}
+.text__entreprise_3 {
+    overflow: hidden;
+    width: 100%;
+    height: 41px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: 0px;
+}
+@media screen and (min-width: 700px){
+    #passion__text_1{
+        font-size: 2em;
+    }
+    .text__entreprise_1{
+        height: 52px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #passion__text_2{
+        font-size: 2em;
+    }
+    .text__entreprise_2{
+        height: 52px;
+        margin-top: -15px;
+        text-align: center;
+    }
+    #passion__text_3{
+        font-size: 2em;
+    }
+    .text__entreprise_3{
+        height: 54px;
+        margin-top: -15px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 900px){
+    #passion__text_1{
+        font-size: 2.7em;
+    }
+    .text__entreprise_1{
+        height: 70px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #passion__text_2{
+        font-size: 2.7em;
+    }
+    .text__entreprise_2{
+        height: 70px;
+        margin-top: -15px;
+        text-align: center;
+    }
+    #passion__text_3{
+        font-size: 2.7em;
+    }
+    .text__entreprise_3{
+        height: 73px;
+        margin-top: -15px;
+        text-align: center;
+    }
+}
 /* ******************************************** */
 
 

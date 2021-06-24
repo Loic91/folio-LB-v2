@@ -41,12 +41,16 @@ gsap.from('#passion__2', 2.5, {
     y: '100%',
     delay: 5.5
 })
-// ==========================
-// gsap.from('#work', 1.5, {
-//     y: '100%',
-//     delay: 6.5
-// })
 
-
-
-
+gsap.from('#passion__text_1', 2.5, {
+    y: '100%',
+    delay: 6
+})
+gsap.from('#passion__text_2', 2.5, {
+    y: '100%',
+    delay: 6.5
+})
+gsap.from('#passion__text_3', 2.5, {
+    y: '100%',
+    delay: 7
+})
