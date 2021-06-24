@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" >
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passion Coiffure</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="overlay.css">
+  <link rel="stylesheet" href="./passion.css">
 
-	<title>Passion Coiffure</title>
-	
-    <link rel="stylesheet" href="overlay.css">
-    <!-- <link rel="stylesheet" href="project-one.css"> -->
-	<link rel="stylesheet" href="passion.css" type="text/css">
-	<link rel="stylesheet" href="locomotive-scroll.css" type="text/css">
 </head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.css">
+
+  
+
+
+</head>
+
 <body>
 
     <!-- OVERLAY ============================= -->
@@ -53,233 +66,107 @@
     </div>
     <!-- ===================================== -->
 
-    <div id="page-wrap">
 
-        <div id="canvas"></div>
 
-        <div id="debug">
-            Planes actually drawn: <strong id="debug-value">0</strong>
-        </div>
 
-        <div id="page-content">
 
-            <div id="content">
 
-                <nav>
-                    <ul class="header js-liquify-trigger">
-                        <li class="li__left">PROJECT No.001<br/>PASSION COIFFURE</li>
-                        <li class="li__right">E.MAIL<br/>TWITTER</li>
-                    </ul>
-                </nav>
     
-                <svg style="height: 0; opacity: 0; visibility: hidden;">
-                    <filter id="liquify">
-                        <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
-                        <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
-                    </filter>
-                </svg>
+    <!-- DO NOT TRANSLATE THE CANVAS! -->
+    <div id="canvas"></div>
+  
+    <div data-scroll-container>
 
-                <div class="passion__title">
-                    <div class="text__passion_1">
-                        <h1 id="passion__1">PASSION</h1>
+        <section data-scroll-section>
+
+            <div class="page-wrap">
+
+                
+
+                <div id="content">
+
+
+
+                    <nav>
+                        <ul class="header js-liquify-trigger">
+                            <li class="li__left">PROJECT No.001<br/>PASSION COIFFURE</li>
+                            <li class="li__right">E.MAIL<br/>TWITTER</li>
+                        </ul>
+                    </nav>
+              
+                    <svg style="height: 0; opacity: 0; visibility: hidden;">
+                        <filter id="liquify">
+                            <feTurbulence baseFrequency="0.015" numOctaves="3" result="warp" type="fractalNoise"></feTurbulence>
+                            <feDisplacementMap id="liquid" in="SourceGraphic" in2="warp" scale="300" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+                        </filter>
+                    </svg>
+      
+                    <div class="passion__title">
+                        <div class="text__passion_1">
+                            <h1 id="passion__1">PASSION</h1>
+                        </div>
+                        <div class="text__passion_2">
+                            <h1 id="passion__2">COIFFURE</h1>
+                        </div>
+      
+                        <!-- <p>
+                            On desktop we're using the <a href="https://github.com/locomotivemtl/locomotive-scroll" title="Locomotive Scroll" target="_blank">Locomotive Scroll</a> library for smooth scroll. On mobile we'll use the native scroll event.
+                        </p> -->
                     </div>
-                    <div class="text__passion_2">
-                        <h1 id="passion__2">COIFFURE</h1>
-                    </div>
 
-                    <p>
-                        On desktop we're using the <a href="https://github.com/locomotivemtl/locomotive-scroll" title="Locomotive Scroll" target="_blank">Locomotive Scroll</a> library for smooth scroll. On mobile we'll use the native scroll event.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel cupiditate vitae adipisci distinctio eius accusamus libero nulla, quisquam aspernatur nostrum officia deserunt laborum, enim doloribus. Repellat cumque veritatis voluptatem nesciunt modi! Veritatis, doloremque voluptates. Facilis necessitatibus repellat quidem modi fugiat quod asperiores similique praesentium veniam obcaecati nam perspiciatis, odio impedit consequuntur inventore sapiente assumenda ad? Excepturi ea distinctio maxime quis cupiditate ipsum explicabo aliquam et optio animi, a ducimus culpa numquam deserunt, ex modi pariatur ut dolorem sunt temporibus, libero magnam voluptatem. Eum fuga debitis vitae harum, voluptatum vel, perferendis voluptates id quas at totam pariatur temporibus, reprehenderit asperiores molestiae impedit! Dignissimos repellendus laudantium, expedita voluptates natus ducimus delectus, eum eligendi alias sequi voluptatibus possimus ipsa ratione est consequatur sapiente iusto, obcaecati rerum illum. Provident alias repudiandae natus consequatur nisi, excepturi possimus aperiam quisquam molestias quidem nobis incidunt, vel, veritatis dicta ducimus perspiciatis id earum. Iure sequi perferendis voluptatem cum vitae earum repellendus, dolores omnis id neque ratione dolorem. Dignissimos quos ab, labore id maiores quaerat quas praesentium obcaecati laborum mollitia explicabo aperiam reprehenderit facilis rem ipsam corporis laudantium?</p>
-                </div>
 
-                <div id="planes">
 
-                    <!-- <div class="plane-wrapper">
-                        <span class="plane-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="https://images.unsplash.com/photo-1562729562-679ab5311bbf?dpr=1&auto=format&fit=crop&w=1920&h=1080&q=100&cs=tinysrgb&crop=" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                    </div> -->
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 2</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-1.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 3</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-2.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 4</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-3.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <!-- <div class="plane-wrapper">
-                        <span class="plane-title">Title 5</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-4.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 6</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-5.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 7</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-6.png" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div>
-              
-                      <div class="plane-wrapper">
-                        <span class="plane-title">Title 8</span>
-                        <div class="plane-inner">
-                          <div class="plane" data-vs-id="multiple-planes-vs" data-fs-id="multiple-planes-fs">
-                            <img src="img-portfolio/passion-coiffure-0.jpg" data-sampler="planeTexture" />
-                          </div>
-                        </div>
-                      </div> -->
+                    <section class="content-section">
+                        <div class="wrapper">
+                            <div id="showcase" class="text-section">
 
+                              <div class="websites-examples-gallery">
+
+                                <a class="website-example-item">
+                                    <div class="website-example-cover">
+                                        <div class="showcase-curtain">
+                                            <img src="img-portfolio/passion-coiffure-0.jpg"
+                                                data-sampler="uExample" />
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <p>
+                                  On desktop we're using the <a href="https://github.com/locomotivemtl/locomotive-scroll" title="Locomotive Scroll" target="_blank">Locomotive Scroll</a> library for smooth scroll. On mobile we'll use the native scroll event.
+                              </p>
+
+                                <a class="website-example-item">
+                                    <div class="website-example-cover">
+                                        <div class="showcase-curtain">
+                                            <img src="https://images.unsplash.com/photo-1603194477925-b65a2d92d015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                                                data-sampler="uExample" />
+                                        </div>
+                                    </div>
+                                </a>
+
+
+
+                              </div>
+                            </div>
+
+                        </div>
+                    </section>
                 </div>
             </div>
 
-        </div>
+
+
+
+        </section>
+
+
+
+
+
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <script id="multiple-planes-vs" type="x-shader/x-vertex">
-        #ifdef GL_ES
-                  precision mediump float;
-                  #endif
-      
-                  // default mandatory variables
-                  attribute vec3 aVertexPosition;
-                  attribute vec2 aTextureCoord;
-      
-                  uniform mat4 uMVMatrix;
-                  uniform mat4 uPMatrix;
-      
-                  uniform mat4 planeTextureMatrix;
-      
-                  // custom variables
-                  varying vec3 vVertexPosition;
-                  varying vec2 vTextureMatrixCoord;
-      
-                  uniform float uScrollEffect;
-      
-                  void main() {
-      
-                      vec3 vertexPosition = aVertexPosition;
-      
-                      // cool effect on scroll
-                      vertexPosition.x += sin((vertexPosition.y / 1.5 + 1.0) * 3.141592) * (sin(uScrollEffect / 2000.0));
-      
-                         gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
-      
-                         // varyings
-                         vVertexPosition = vertexPosition;
-                         vTextureMatrixCoord = (planeTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
-                  }
-    </script>
-    <script id="multiple-planes-fs" type="x-shader/x-fragment">
-        #ifdef GL_ES
-                  precision mediump float;
-                  #endif
-      
-                  varying vec3 vVertexPosition;
-                  varying vec2 vTextureCoord;
-                  varying vec2 vTextureMatrixCoord;
-      
-                  uniform sampler2D planeTexture;
-      
-                  void main( void ) {
-                      // slides transitions
-                      vec4 finalColor = texture2D(planeTexture, vTextureMatrixCoord);
-      
-                      gl_FragColor = finalColor;
-                  }
-    </script>
-      
-    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.3.9/dist/locomotive-scroll.min.js'></script>
-    <script src='https://www.martin-laxenaire.fr/libs/curtainsjs/build/curtains.js'></script>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <!-- <script src="locomotive-scroll.min.js" type="text/javascript"></script> -->
-    <!-- <script>
-        const scroll = new LocomotiveScroll({
-            // el: document.querySelector('[data-scroll-container]'),
-            el: document.getElementById('page-content'),
-            smooth: true,
-
-            // for tablet smooth
-            tablet: { smooth: true },
-
-            // for mobile
-            smartphone: { smooth: true, 
-                            multiplier: { number: 3 //Augmente le vitesse de défilement du scroll
-                            } 
-                        },
-            
-        });
-    </script> -->
-
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js'></script>
@@ -288,10 +175,16 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
 
-    <script src="passion.js"></script>
+</body>
+
+</html>
+
+
     <script src="nav.js"></script>
     <script src="overlay.js"></script>
     <script src="code-gsap.js"></script>
     <script src="loader.js"></script>
+    <script type="module" src="passion.js"></script>
+
 </body>
 </html>

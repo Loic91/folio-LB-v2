@@ -1,185 +1,167 @@
-window.addEventListener("load", function() {
-    // we will keep track of all our planes in an array
-    var planes = [];
-    var scrollEffect = 0;
-  
-    // get our planes elements
-    var planeElements = document.getElementsByClassName("plane");
-  
-    // set up our WebGL context and append the canvas to our wrapper
-    var webGLCurtain = new Curtains({
-      container: "canvas",
-      watchScroll: false // we'll handle it by ourself
-    });
-  
-    // handle smooth scroll and update planes positions
-    var smoothScroll = new LocomotiveScroll({
-      el: document.getElementById("page-content"),
-      smooth: true,
-      inertia: 0.5,
-      passive: true
-    });
-  
-    webGLCurtain
-      .onRender(function() {
-        if (smoothScroll.isMobile) {
-          // update our planes deformation
-          // increase/decrease the effect
-          if (scrollEffect >= 0) {
-            scrollEffect = Math.max(0, scrollEffect - 2);
-          } else {
-            scrollEffect = Math.min(0, scrollEffect + 2);
-          }
-        }
-  
-        // update our number of planes drawn debug value
-        debugElement.innerText = planeDrawn;
-      })
-      .onError(function() {
-        // we will add a class to the document body to display original images
-        document.body.classList.add("no-curtains", "planes-loaded");
-      });
-  
-    function updateScroll(xOffset, yOffset) {
-      // update our scroll manager values
-      webGLCurtain.updateScrollValues(xOffset, yOffset);
-  
-      // get scroll deltas to apply the effect on scroll
-      var delta = webGLCurtain.getScrollDeltas();
-  
-      // invert value for the effect
-      delta.y = -delta.y;
-  
-      // threshold
-      if (delta.y > 60) {
-        delta.y = 60;
-      } else if (delta.y < -60) {
-        delta.y = -60;
-      }
-  
-      if (smoothScroll.isMobile && Math.abs(delta.y) > Math.abs(scrollEffect)) {
-        scrollEffect = delta.y;
-      } else {
-        scrollEffect = delta.y * 1.5;
-      }
-  
-      // manually update planes positions
-      for (var i = 0; i < planes.length; i++) {
-        planes[i].updateScrollPosition();
-  
-        // apply additional translation, scale and rotation
-        applyPlanesParallax(i);
-  
-        // update the plane deformation uniform as well
-        planes[i].uniforms.scrollEffect.value = scrollEffect;
-      }
-    }
-  
-    // custom scroll event
-    if (!smoothScroll.isMobile) {
-      // we'll render only while lerping the scroll
-      webGLCurtain.disableDrawing();
-      smoothScroll.on("scroll", function(obj) {
-        updateScroll(obj.scroll.x, obj.scroll.y);
-  
-        // render scene
-        webGLCurtain.needRender();
-      });
-    } else {
-      window.addEventListener(
-        "scroll",
-        function() {
-          updateScroll(window.pageXOffset, window.pageYOffset);
-        },
-        { passive: true }
-      );
-    }
-  
-    // keep track of the number of plane we're currently drawing
-    var debugElement = document.getElementById("debug-value");
-    // we need to fill the counter with all our planes
-    var planeDrawn = planeElements.length;
-  
-    // no need for shaders as they were already passed by data attributes
-    var params = {
-      shareProgram: true, // share planes program to improve plane creation speed
-      widthSegments: 10,
-      heightSegments: 10,
-      uniforms: {
-        scrollEffect: {
-          name: "uScrollEffect",
-          type: "1f",
-          value: 0
-        }
-      }
-    };
-  
-    // add our planes and handle them
-    for (var i = 0; i < planeElements.length; i++) {
-      var plane = webGLCurtain.addPlane(planeElements[i], params);
-  
-      if (plane) {
-        planes.push(plane);
-  
-        handlePlanes(i);
-      }
-    }
-  
-    // handle all the planes
-    function handlePlanes(index) {
-      var plane = planes[index];
-  
-      // check if our plane is defined and use it
-      plane &&
-        plane
-          .onReady(function() {
-            // apply parallax on load
-            applyPlanesParallax(index);
-  
-            // once everything is ready, display everything
-            if (index == planes.length - 1) {
-              document.body.classList.add("planes-loaded");
-            }
-          })
-          .onAfterResize(function() {
-            // apply new parallax values after resize
-            applyPlanesParallax(index);
-          })
-          .onRender(function() {
-            // apply the rotation
-            plane.setRotation(0, 0, scrollEffect / 750);
-  
-            // scale plane and its texture
-            plane.setScale(1, 1 + Math.abs(scrollEffect) / 300);
-            plane.textures[0].setScale(1, 1 + Math.abs(scrollEffect) / 150);
-          })
-          .onReEnterView(function() {
-            // plane is drawn again
-            planeDrawn++;
-          })
-          .onLeaveView(function() {
-            // plane is not drawn anymore
-            planeDrawn--;
-          });
-    }
-  
-    function applyPlanesParallax(index) {
-      // calculate the parallax effect
-  
-      // get our window size
-      var sceneBoundingRect = webGLCurtain.getBoundingRect();
-      // get our plane center coordinate
-      var planeBoundingRect = planes[index].getBoundingRect();
-      var planeOffsetTop = planeBoundingRect.top + planeBoundingRect.height / 2;
-      // get a float value based on window height (0 means the plane is centered)
-      var parallaxEffect =
-        (planeOffsetTop - sceneBoundingRect.height / 2) /
-        sceneBoundingRect.height;
-  
-      // apply the parallax effect
-      planes[index].setRelativePosition(
-        0,
-        parallaxEffect * (sceneBoundingRect.height / 4)
-      );
-    }
+import { Curtains, Plane } from 'https://www.curtainsjs.com/src/index.mjs';
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});
+
+
+function imgCurtain() {
+
+  // Basic Setup
+  const curtains = new Curtains({
+    container: "canvas",
+    premultipliedAlpha: true,
+    production: false,
+    pixelRatio: Math.min(1.5, window.devicePixelRatio),
+    // do not watch scroll, we'll do it with locomotive scroll instead
+    watchScroll: false
   });
+
+
+  // On Error
+  curtains.onError(function () {
+    document.body.classList.add("no-curtains");
+  }).onContextLost(() => {
+    curtains.restoreContext();
+  });
+
+  // update planes positions on locomotive scroll event
+  scroll.on('scroll', (obj) => {
+    curtains.updateScrollValues(obj.scroll.x, obj.scroll.y);
+  });
+
+
+  // Curtains Effect
+  const showcaseElements = document.getElementsByClassName("showcase-curtain");
+  const showcasePlanes = [];
+
+
+
+
+
+  // Function that Create Effects
+
+  function waveEffect(index) {
+    const plane = showcasePlanes[index];
+    plane.onReady(function () {
+      plane.userData.mouseOver = false;
+      if (showcaseElements[index]) {
+        showcaseElements[index].addEventListener("mouseenter", function (e) {
+          plane.userData.mouseOver = true;
+        });
+      }
+
+      if (showcaseElements[index]) {
+        showcaseElements[index].addEventListener("mouseleave", function (e) {
+          plane.userData.mouseOver = false;
+        });
+      }
+    }).onRender(() => {
+      // use damping
+      if (plane.userData.mouseOver) {
+        plane.uniforms.time.value += (45 - plane.uniforms.time.value) * 0.0375;
+      } else {
+        plane.uniforms.time.value += (0 - plane.uniforms.time.value) * 0.0375;
+      }
+    });
+  }
+
+
+
+  // Sheders
+
+  const vSheder = `
+    precision mediump float;
+
+    // default mandatory variables
+    attribute vec3 aVertexPosition;
+    attribute vec2 aTextureCoord;
+
+    uniform mat4 uMVMatrix;
+    uniform mat4 uPMatrix;
+
+    // custom variables
+    varying vec3 vVertexPosition;
+    varying vec2 vTextureCoord;
+
+    uniform float uTime;
+
+    void main() {
+      vec3 vertexPosition = aVertexPosition;
+
+      // a float varying from -1.5 to 1.5
+      float waveCoords = ((uTime / 45.0) * 3.5) - 1.75;
+
+      // distance from the waveCoords to the vertex coordinates
+      float distanceToWave = distance(vec2(vertexPosition.x, 0.0), vec2(waveCoords, 0.0));
+
+      // nice little wave animation from left to right or right to left depending on the timer
+      vertexPosition.z -= (cos(clamp(distanceToWave, 0.0, 0.75) * 3.141592) - cos(0.75 * 3.141592) + (2.0 * sin(3.141592 * uTime / 90.0))) * 0.025;
+
+      gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+
+      // varyings
+      vTextureCoord = aTextureCoord;
+      vVertexPosition = vertexPosition;
+    }
+`;
+
+  const fSheder = `precision mediump float;
+
+    uniform float uTime;
+
+    varying vec3 vVertexPosition;
+    varying vec2 vTextureCoord;
+
+    uniform sampler2D uExample;
+
+
+    void main() {
+
+      // get our texture coords
+      vec2 textureCoords = vec2(vTextureCoord.x, vTextureCoord.y);
+      vec4 finalColor = texture2D(uExample, textureCoords);
+
+      gl_FragColor = finalColor;
+  }`;
+
+
+
+
+  // Calling Planes on Loop
+
+
+  for (let i = 0; i < showcaseElements.length; i++) {
+    const showcaseParams = {
+
+      vertexShader: vSheder,
+      fragmentShader: fSheder,
+      widthSegments: 20,
+      heightSegments: 1,
+      texturesOptions: {
+        minFilter: curtains.gl.LINEAR_MIPMAP_NEAREST
+      },
+      uniforms: {
+        time: {
+          name: "uTime",
+          type: "1f",
+          value: 0,
+        },
+      },
+    };
+
+    const plane = new Plane(curtains, showcaseElements[i], showcaseParams);
+    showcasePlanes.push(plane);
+    waveEffect(i);
+    console.log(showcasePlanes);
+  }
+};
+
+
+
+
+
+window.addEventListener("load", () => {
+  imgCurtain();
+});

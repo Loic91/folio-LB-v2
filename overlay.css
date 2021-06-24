@@ -31,14 +31,14 @@
 }
 /* ============ */
 
-.wrapper{
+.wrapper__overlay{
 	width: 100%;
 	position: absolute;
     font-size : 2vh;
     /* background-color: #e6dfd2; */
     background-color: #000000;
 }
-.wrapper h2{
+.wrapper__overlay h2{
     font-family: 'Mukta', sans-serif;
 }
 .rw-words span{
@@ -83,7 +83,7 @@
 
 
 @media screen and (min-width: 769px){
-    .wrapper{
+    .wrapper__overlay{
         width: 50%;
         position: absolute;
         font-family: 'Roboto';
