@@ -62,4 +62,14 @@ gsap.from("#roll", {
     delay: 7.5,
     duration:3.5, 
     ease:"power3.out"
-  })
+})
+
+// about.html
+gsap.from(".svg", {
+    y:80, 
+    stagger:0.05, 
+    opacity:0, 
+    delay: 7.3,
+    duration:3.5, 
+    ease:"power3.out"
+})
