@@ -108,16 +108,21 @@
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 4%;
+    top: 2%;
     left: 90%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
-
+@media screen and (min-width: 700px){
+    .loader .loader-counter h1{
+        top: 2.5%;
+        font-size: 25px;
+    }
+}
 @media screen and (min-width: 769px){
     .loader .loader-counter h1{
-        top: 9%;
+        top: 5%;
         font-size: 35px;
     }
 }
