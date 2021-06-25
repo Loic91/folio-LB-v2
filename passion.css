@@ -137,7 +137,8 @@ li{
 
 /* *** TEXT *********************************** */
 #passion__text_1{
-    font-family: "GRIFTER";
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
     color: rgb(255, 255, 255);
@@ -146,14 +147,15 @@ li{
 .text__entreprise_1 {
     overflow: hidden;
     width: 100%;
-    height: 38px;
+    height: 45px;
     z-index: 1;
 
     text-align: center;
     margin-top: 0px;
 }
 #passion__text_2{
-    font-family: "GRIFTER";
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
     color: rgb(255, 255, 255);
@@ -162,14 +164,15 @@ li{
 .text__entreprise_2 {
     overflow: hidden;
     width: 100%;
-    height: 39px;
+    height: 45px;
     z-index: 1;
 
     text-align: center;
-    margin-top: 0px;
+    margin-top: -20px;
 }
 #passion__text_3{
-    font-family: "GRIFTER";
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
     color: rgb(255, 255, 255);
@@ -182,7 +185,7 @@ li{
     z-index: 1;
 
     text-align: center;
-    margin-top: -5px;
+    margin-top: -20px;
     padding-top: 5px;
 }
 @media screen and (min-width: 700px){
@@ -190,7 +193,7 @@ li{
         font-size: 2em;
     }
     .text__entreprise_1{
-        height: 52px;
+        height: 60px;
         margin-top: 0px;
         text-align: center;
     }
@@ -198,16 +201,16 @@ li{
         font-size: 2em;
     }
     .text__entreprise_2{
-        height: 52px;
-        margin-top: -15px;
+        height: 60px;
+        margin-top: -25px;
         text-align: center;
     }
     #passion__text_3{
         font-size: 2em;
     }
     .text__entreprise_3{
-        height: 54px;
-        margin-top: -15px;
+        height: 64px;
+        margin-top: -25px;
         text-align: center;
     }
 }
@@ -216,7 +219,7 @@ li{
         font-size: 2.5em;
     }
     .text__entreprise_1{
-        height: 66px;
+        height: 74px;
         margin-top: 0px;
         text-align: center;
     }
@@ -224,16 +227,16 @@ li{
         font-size: 2.5em;
     }
     .text__entreprise_2{
-        height: 66px;
-        margin-top: -20px;
+        height: 74px;
+        margin-top: -35px;
         text-align: center;
     }
     #passion__text_3{
         font-size: 2.5em;
     }
     .text__entreprise_3{
-        height: 70px;
-        margin-top: -20px;
+        height: 79px;
+        margin-top: -35px;
         text-align: center;
     }
 }
