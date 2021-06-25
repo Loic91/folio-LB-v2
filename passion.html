@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Passion Coiffure</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="passion-roll.css">
   <link rel="stylesheet" href="overlay.css">
   <link rel="stylesheet" href="./passion.css">
 
@@ -101,8 +103,34 @@
                     <h1 id="passion__text_2">HAUT DE GAMME</h1>
                 </div>
                 <div class="text__entreprise_3">
-                    <h1 id="passion__text_3">SITUÉ À PARIS, FR</h1>
+                    <h1 id="passion__text_3">SITUÉ À PARIS - FR</h1>
                 </div>
+            </div>
+
+            <div id="roll">
+                <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 136">
+                    <defs>
+                    <path ref="circlePath" id="circlePath" d="M7,69a60,60 0 1,0 120,0a60,60 0 1,0 -120,0"></path>
+                    </defs>
+                    <g>
+                       
+                        <a href="#">
+                            <text x="50%" y="50%" class="button-letter-center" id="letter">
+                                01
+                            </text>
+                        
+                    
+                            <text ref="textCurved" id="textCurved" fill="#000">
+                                <textPath side="right" ref="pathTextCurved" id="pathTextCurved" xlink:href="#circlePath">
+                                <tspan class="button-curved-en">• Visitez le projet</tspan>
+                                <tspan class="button-curved-jpn">• 0/001</tspan>
+                                </textPath>
+                            </text>
+                        
+                            <circle id="circle" ref="circle" cx="67" cy="69" r="60" fill="transparent"></circle>
+                        </a>
+                    </g>
+                </svg>
             </div>
 
         </div>
@@ -215,11 +243,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
 
-</body>
-
-</html>
 
 
+    
+    <script src="text-roll.js"></script>
     <script src="nav.js"></script>
     <script src="overlay.js"></script>
     <script src="code-gsap.js"></script>

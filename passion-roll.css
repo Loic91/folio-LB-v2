@@ -1,0 +1,51 @@
+@font-face{
+    font-family: "GRIFTER"; 
+    src: url('./FONTS/GRIFTER/GRIFTER™\ Bold.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+#roll{
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: -100px;
+}
+
+#roll svg{
+    width: 130px;
+}
+
+#text,
+#letter,
+#pathTextCurved {
+  pointer-events: none;
+}
+
+#letter {
+  text-anchor: middle;
+  alignment-baseline: central;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#letter,
+#textCurved {
+  fill: #ffffff;
+}
+
+#textCurved {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 769px){
+    /* Pour régler la taille du cercle, modifier directement depuis le code HTML */
+    #roll svg{
+        width: 120px;
+    }
+
+    #roll{
+        margin-top: -210px;
+    }
+}
