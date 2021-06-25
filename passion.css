@@ -35,9 +35,10 @@ nav{
 
 li{
     list-style: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
     margin-left: -20px;
     margin-right: 20px;
+    margin-top: -35px;
 }
 .li__right{
     text-align: right;

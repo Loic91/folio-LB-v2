@@ -22,7 +22,7 @@ nav{
 
 li{
     list-style: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
     margin-left: -20px;
     margin-right: 20px;
 }
@@ -63,12 +63,12 @@ li{
       padding-left: 20px;
     }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .o-container {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
 
-      margin-top: -50px;
+      margin-top: -90px;
     }
 }
 
@@ -93,18 +93,52 @@ li{
     text-align: center;
 }
 .folio{
-    margin-top: -70px;
+    margin-top: -15px;
 }
 .dev{
-    margin-top: -70px;
+    margin-top: -15px;
 }
 .crea{
-    margin-top: -70px;
+    margin-top: -15px;
     display: flex;
     text-align: right;
 }
 .crea__tif{
-    margin-left: -250px;
+    /* margin-left: 150px; */
+    margin-left: auto;
+    margin-right: 10px;
+}
+@media screen and (min-width: 700px){
+    .folio{
+        margin-top: -40px;
+    }
+    .dev{
+        margin-top: -40px;
+    }
+    .crea{
+        margin-top: -40px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
+}
+@media screen and (min-width: 900px){
+    .folio{
+        margin-top: -85px;
+    }
+    .dev{
+        margin-top: -85px;
+    }
+    .crea{
+        margin-top: -85px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
 }
 /* ETOILES *** */
 @keyframes star {
@@ -143,6 +177,13 @@ li{
   animation-direction: alternate;
   }
 
+  @media screen and (max-width: 700px){
+      .svg{
+          /* width: 200px;
+          margin-top: -180px; */
+          display: none;
+      }
+  }
 
 
 /* ******************** */
@@ -171,8 +212,9 @@ li{
   
 @media (max-width: 699px){
     .o-title_line span{
-        font-size: 13.4vw;
+        font-size: 12vw;
     }
 }
+
 
 
