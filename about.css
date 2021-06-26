@@ -108,7 +108,10 @@ li{
     margin-left: auto;
     margin-right: 10px;
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
+    .o-container{
+        margin-top: 30px;
+    }
     .folio{
         margin-top: -40px;
     }
@@ -125,14 +128,34 @@ li{
     }
 }
 @media screen and (min-width: 900px){
+    .o-container{
+        margin-top: 30px;
+    }
     .folio{
-        margin-top: -85px;
+        margin-top: -40px;
     }
     .dev{
-        margin-top: -85px;
+        margin-top: -40px;
     }
     .crea{
-        margin-top: -85px;
+        margin-top: -40px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .folio{
+        margin-top: -75px;
+    }
+    .dev{
+        margin-top: -75px;
+    }
+    .crea{
+        margin-top: -75px;
         display: flex;
         text-align: right;
     }
