@@ -93,13 +93,13 @@ li{
     text-align: center;
 }
 .folio{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .dev{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .crea{
-    margin-top: -15px;
+    margin-top: -10px;
     display: flex;
     text-align: right;
 }
@@ -216,5 +216,4 @@ li{
     }
 }
 
-
-
+/* CARDS ********************************************* */
