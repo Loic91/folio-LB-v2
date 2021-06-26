@@ -335,6 +335,7 @@ li{
     }
     .word-two h2{
         font-size: 1.2em;
+        padding-top: 3px;
     }
     .accueil__container .section-text .images-container p {
         width: 200%;
