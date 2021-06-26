@@ -68,7 +68,7 @@ li{
       padding-right: 2.5rem;
       padding-left: 2.5rem;
 
-      margin-top: -90px;
+      /* margin-top: -90px; */
     }
 }
 
@@ -129,7 +129,7 @@ li{
 }
 @media screen and (min-width: 900px){
     .o-container{
-        margin-top: 30px;
+        margin-top: -75px;
     }
     .folio{
         margin-top: -40px;
