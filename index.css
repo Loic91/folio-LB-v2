@@ -1,0 +1,358 @@
+@font-face{
+    font-family: "ApexMk3"; 
+    src: url('./FONTS/ApexMk3/Apex\ Mk3-Medium.otf') format('opentype');
+}
+@font-face{
+    font-family: "GRIFTER"; 
+    src: url('./FONTS/GRIFTER/GRIFTER™\ Bold.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1c1c;
+}
+/* NAV *********************************** */
+nav{
+    font-family: "GRIFTER";
+    /* font-family: 'Mukta', sans-serif; */
+    color: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+    font-size: 0.8em;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+.li__right{
+    text-align: right;
+}
+.header {
+    filter: url("#liquify");
+    opacity: 0;
+    text-align: left;
+    /* text-align: center;
+    transform: translateY(50px); */
+
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 769px){
+    li{
+        font-size: 1.5em;
+    }
+}
+/* TITRE ********************************* */
+.c-cta h1 {
+    /* font-family: "ApexMk3"; */
+    font-family: "GRIFTER";
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+.o-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95rem;
+}
+@media (max-width: 699px) {
+    .o-container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+}
+@media (min-width: 900px) {
+    .o-container {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+
+      margin-top: -90px;
+    }
+}
+
+.o-title {
+    margin: 0;
+    padding: 2.5rem 0;
+    perspective: 600px;
+    -webkit-perspective: 600px;
+}
+.o-title_line {
+    display: block;
+    opacity: 0;
+    /* transform-origin: center top; */
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(-80deg);
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1),
+      transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-size: 0;
+}
+/* ********************* */
+.name, .folio, .dev{
+    text-align: center;
+}
+.folio{
+    margin-top: -10px;
+}
+.dev{
+    margin-top: -10px;
+}
+.crea{
+    margin-top: -10px;
+    display: flex;
+    text-align: right;
+}
+.crea__tif{
+    /* margin-left: 150px; */
+    margin-left: auto;
+    margin-right: 10px;
+}
+@media screen and (min-width: 600px){
+    .o-container{
+        margin-top: 30px;
+    }
+    .folio{
+        margin-top: -40px;
+    }
+    .dev{
+        margin-top: -40px;
+    }
+    .crea{
+        margin-top: -40px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
+}
+@media screen and (min-width: 900px){
+    .o-container{
+        margin-top: 30px;
+    }
+    .folio{
+        margin-top: -40px;
+    }
+    .dev{
+        margin-top: -40px;
+    }
+    .crea{
+        margin-top: -40px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .folio{
+        margin-top: -75px;
+    }
+    .dev{
+        margin-top: -75px;
+    }
+    .crea{
+        margin-top: -75px;
+        display: flex;
+        text-align: right;
+    }
+    .crea__tif{
+        margin-left: -250px;
+    }
+}
+/* ETOILES *** */
+@keyframes star {
+    to {
+      zoom:10%;
+      opacity:0;
+    }
+    from{
+        zoom:100%;
+        opacity:1;
+    }
+  }
+  .star {
+  animation-name: star;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  
+  }
+  @keyframes star1 {
+    to {
+   
+      opacity:0;
+    }
+    from{
+   
+        opacity:1;
+    }
+  }
+  .star1 {
+  animation-name: star1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  }
+
+  @media screen and (max-width: 700px){
+      .svg{
+          /* width: 200px;
+          margin-top: -180px; */
+          display: none;
+      }
+  }
+
+
+/* ******************** */
+.o-title.is-inview .o-title_line {
+    transform: none;
+    opacity: 1;
+}
+.o-title.is-inview .o-title_line:first-child {
+    transition-delay: 5.9s;
+}
+.o-title.is-inview .o-title_line:nth-child(2) {
+    transition-delay: 6s;
+}
+.o-title.is-inview .o-title_line:nth-child(3) {
+    transition-delay: 6.1s;
+}
+.o-title.is-inview .o-title_line:nth-child(4) {
+    transition-delay: 6.2s;
+}
+
+.o-title_line span {
+    display: inline-block;
+    min-width: 0.05em;
+    font-size: 13vw;
+}
+  
+@media (max-width: 699px){
+    .o-title_line span{
+        font-size: 12vw;
+    }
+}
+
+/* TEXTE ABOUT ********************************************* */
+.section-text{
+    margin-top: 150px;
+}
+.accueil__container .section-text {
+    /* MODIFIER LA LONGUEUR DU CONTAINER ICI */
+    height: calc(140vh + 32px + 16px);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 40% 60%;
+}
+.accueil__container .section-text blockquote {
+    font-size: 5vmin;
+    padding: 16px 16px 0 16px;
+}
+.accueil__container .section-text blockquote cite {
+    display: block;
+}
+.accueil__container .section-text .images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 8px;
+    gap: 8px;
+    margin-top: 16px;
+}
+/* .accueil__container .section-text .images-container img {
+    width: 100%;
+    max-height: 75vh;
+    height: 100%;
+    align-self: stretch;
+    object-fit: cover;
+
+    margin-top: -750px;
+} */
+.accueil__container .section-text .images-container p{
+    width: 150%;
+    max-height: 75vh;
+    height: 100%;
+    /* align-self: stretch;
+    object-fit: cover; */
+
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-size: 1.6em;
+}
+
+.main-word-1{
+    font-family: "GRIFTER";
+    text-align: left;
+    width: 110%;
+    height: 66px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.word-one h2{
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
+.main-word-2{
+    font-family: "GRIFTER";
+    text-align: left;
+    width: 100%;
+    height: 66px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.word-two h2{
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
+@media (max-width: 699px){
+    .section-text{
+        margin-top: -100px;
+    }
+    .main-word-1{
+        width: 320%;
+        height: 13px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-one h2{
+        font-size: 1.2em;
+    }
+    .main-word-2{
+        width: 220%;
+        height: 12px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-two h2{
+        font-size: 1.2em;
+    }
+    .accueil__container .section-text .images-container p {
+        width: 200%;
+        max-height: 75vh;
+        height: 100%;
+        align-self: stretch;
+        object-fit: cover;
+    
+        font-family: 'Mukta', sans-serif;
+        color: white;
+        font-size: 1.1em;
+    }
+}
+
+/* CONTACT ******************************************************************* */
+
+
+
+
+
+
+

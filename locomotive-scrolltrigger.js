@@ -247,7 +247,7 @@ ScrollTrigger.create({
   }),
   // markers: true
 })
-// CARDS ===============================================================================================================================================================================================================================================================================================================================================================================================================
+// CARDS (page : about.html)===============================================================================================================================================================================================================================================================================================================================================================================================================
 ScrollTrigger.create({
   trigger: '.slider',
   scroller: '.smooth-scroll',
@@ -265,7 +265,46 @@ ScrollTrigger.create({
   // markers: true
 })
 
+ScrollTrigger.create({
+  trigger: '.word-one',
+  scroller: '.smooth-scroll',
 
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('.word-one', 1.8, {
+              y: '100%',
+              delay: 0.5,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '.word-two',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('.word-two', 1.8, {
+              y: '100%',
+              delay: 0.7,
+  }),
+  // markers: true
+})
+// ScrollTrigger.create({
+//   trigger: '.images-container',
+//   scroller: '.smooth-scroll',
+
+//   start: "top bottom",
+//   end: "top top",
+//   animation: gsap.from('.images-container', 3.8, {
+//               y:80, 
+//               stagger:0.05, 
+//               opacity:0, 
+//               delay: 5.5,
+//               duration: 3.5, 
+//               ease:"power3.out"
+//   }),
+//   // markers: true
+// })
 
 
 
