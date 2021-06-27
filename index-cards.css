@@ -17,6 +17,10 @@ a {
     .slider {
         margin-top: -350px;
     }
+
+    .slider .item .img img{
+      margin-left: -85px;
+  }
 }
 
 @media screen and (min-width: 600px){
@@ -127,11 +131,7 @@ a {
   will-change: opacity;
 }
 
-@media screen and (max-width: 599px){
-    .slider .item .img img{
-        margin-left: -80px;
-    }
-}
+
 
 .slider .item .img img {
   position: absolute;
@@ -177,10 +177,10 @@ a {
         margin-top: 55px;
     }
     .prev{
-      margin-left: -15px;
+      margin-left: -20px;
     }
     .next{
-      margin-right: -15px;
+      margin-right: -20px;
     }
     .content .wrap{
         margin-top: 110px;
