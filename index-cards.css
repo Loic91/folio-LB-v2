@@ -177,7 +177,7 @@ a {
 
 @media screen and (max-width: 599px){
     .next, .prev{
-        margin-top: 50px;
+        margin-top: 45px;
     }
     .content .wrap{
         margin-top: 100px;
