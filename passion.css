@@ -138,6 +138,11 @@ li{
 
 
 /* *** TEXT *********************************** */
+.italique{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
 #passion__text_1{
     /* font-family: "GRIFTER"; */
     font-family: 'Mukta', sans-serif;
