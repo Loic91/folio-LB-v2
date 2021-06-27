@@ -254,16 +254,32 @@ ScrollTrigger.create({
 
   start: "top bottom",
   end: "top top",
-  animation: gsap.from('.slider', 7.8, {
-              y:80, 
+  animation: gsap.from('.slider', 1.8, {
+              y: '20%',
+              delay: 0.5,
+
               stagger:0.05, 
               opacity:0, 
-              delay: 5.5,
-              duration: 3.5, 
-              ease:"power3.out"
+              duration: 3.5,
   }),
   // markers: true
 })
+// ScrollTrigger.create({
+//   trigger: '.slider',
+//   scroller: '.smooth-scroll',
+
+//   start: "top bottom",
+//   end: "top top",
+//   animation: gsap.from('.slider', 7.8, {
+//               y:180, 
+//               stagger:0.05, 
+//               opacity:0, 
+//               delay: 5.5,
+//               duration: 3.5, 
+//               ease:"power3.out"
+//   }),
+//   // markers: true
+// })
 
 ScrollTrigger.create({
   trigger: '.word-one',
@@ -289,22 +305,23 @@ ScrollTrigger.create({
   }),
   // markers: true
 })
-// ScrollTrigger.create({
-//   trigger: '.images-container',
-//   scroller: '.smooth-scroll',
 
-//   start: "top bottom",
-//   end: "top top",
-//   animation: gsap.from('.images-container', 3.8, {
-//               y:80, 
-//               stagger:0.05, 
-//               opacity:0, 
-//               delay: 5.5,
-//               duration: 3.5, 
-//               ease:"power3.out"
-//   }),
-//   // markers: true
-// })
+ScrollTrigger.create({
+  trigger: '.images-container',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('.images-container', 1.8, {
+              y: '20%',
+              delay: 0.5,
+
+              stagger:0.05, 
+              opacity:0, 
+              duration: 3.5,
+  }),
+  // markers: true
+})
 
 
 

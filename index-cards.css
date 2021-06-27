@@ -15,21 +15,29 @@ a {
 }
 @media screen and (max-width: 599px){
     .slider {
-        margin-top: -250px;
-      }
+        margin-top: -350px;
+    }
 }
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
   .o-container{
     margin-bottom: -550px;
+  }
+} */
+@media screen and (min-width: 600px){
+  .o-container{
+    margin-bottom: 0px;
+  }
+  .slider{
+      margin-top: -350px;
   }
 }
 @media screen and (min-width: 900px){
   .o-container{
     margin-bottom: 0px;
   }
-    .slider{
-        margin-top: -350px;
-    }
+  .slider{
+      margin-top: -450px;
+  }
 }
 @media screen and (min-width: 1100px){
   .o-container{
@@ -39,6 +47,12 @@ a {
         margin-top: -300px;
     }
 }
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .slider .item .content{
+    font-size: 5em;
+  }
+}
+
 .slider {
   font-family: "GRIFTER"; 
   height: 100vh;
@@ -51,6 +65,8 @@ a {
   position: relative;
   overflow: hidden;
   transition: background-color 2s;
+
+  padding-top: 220px;
 }
 .slider .credits {
   position: absolute;
@@ -81,7 +97,11 @@ a {
   opacity: 0.65;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 900px){
+    /* .slider{
+      padding-top: 0px;
+      margin-top: 300px;
+    } */
     .slider .item {
         position: absolute;
         top: 0;
@@ -151,9 +171,13 @@ a {
   grid-area: 7/9/13/13;
 }
 
+.img-1 img, .img-2 img, .img-3 img, .img-4 img{
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 599px){
     .next, .prev{
-        margin-top: 60px;
+        margin-top: 50px;
     }
     .content .wrap{
         margin-top: 100px;
@@ -171,7 +195,7 @@ a {
   align-items: center;
   justify-content: center;
   line-height: 1.15;
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 .slider .item .content .wrap {
