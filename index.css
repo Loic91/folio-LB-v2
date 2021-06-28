@@ -539,17 +539,18 @@ li{
   }
 }
 .marquee {
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-  color: transparent;
-  top: 0px;
-  display: flex;
-  white-space: nowrap;
-  width: 100%;
-  font-size: 12em;
-  position: relative;
-  width: 100%;
-  pointer-events: none;
+    font-family: "GRIFTER"; 
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: transparent;
+    top: 0px;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 12em;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
 }
 .marquee span:after {
   content: "\00a0";
