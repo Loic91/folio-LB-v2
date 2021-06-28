@@ -55,6 +55,28 @@ gsap.from('#passion__text_3', 1.5, {
     delay: 7
 })
 
+gsap.from('#flowers__1', 1.5, {
+    y: '100%',
+    delay: 5
+})
+gsap.from('#flowers__2', 1.5, {
+    y: '100%',
+    delay: 5.5
+})
+
+gsap.from('#flowers__text_1', 1.5, {
+    y: '100%',
+    delay: 6
+})
+gsap.from('#flowers__text_2', 1.5, {
+    y: '100%',
+    delay: 6.5
+})
+gsap.from('#flowers__text_3', 1.5, {
+    y: '100%',
+    delay: 7
+})
+
 gsap.from("#roll", {
     y:80, 
     stagger:0.05, 

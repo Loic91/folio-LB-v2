@@ -1,0 +1,369 @@
+@font-face{
+    font-family: "ApexMk3"; 
+    src: url('./FONTS/ApexMk3/Apex\ Mk3-Medium.otf') format('opentype');
+}
+@font-face{
+    font-family: "GRIFTER"; 
+    src: url('./FONTS/GRIFTER/GRIFTER™\ Bold.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Verdana, sans-serif;
+    background-color: #757474;
+}
+/* CACHER LA SCROLLBAR POUR Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* CACHER LA SCROLLBAR POUR IE, Edge ET Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* *************************************** */
+
+/*** Nav ***  =================== */
+nav{
+    font-family: "GRIFTER";
+    color: rgb(255, 255, 255);
+    margin-top: -30px;
+}
+
+li{
+    list-style: none;
+    font-size: 0.8em;
+    margin-left: -20px;
+    margin-right: 20px;
+    margin-top: -35px;
+}
+.li__right{
+    text-align: right;
+}
+.header {
+    filter: url("#liquify");
+    opacity: 0;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 769px){
+    li{
+        font-size: 1.5em;
+        margin-top: -20px;
+    }
+}
+/*** Titre *** ==================== */
+.flowers__title{
+    margin-top: 250px;
+}
+#flowers__1{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 4.2em; 
+    color: rgb(255, 255, 255);
+    z-index: 2;  
+}
+.text__flowers_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 115px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: -200px;
+}
+/* #passion__2{
+    font-family: "GRIFTER";
+    font-weight: lighter;
+    font-size: 4.2em; 
+    color: rgb(255, 255, 255);
+    z-index: 2;  
+}
+.text__passion_2 {
+    overflow: hidden;
+    width: 100%;
+    height: 115px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: -50px;
+} */
+@media screen and (min-width: 700px){
+    .flowers__title{
+        margin-top: 0px;
+    }
+    #flowers__1{
+        font-size: 8em;
+    }
+    .flowers__passion_1{
+        height: 218px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    /* #passion__2{
+        font-size: 8em;
+    }
+    .text__passion_2{
+        height: 218px;
+        margin-top: -100px;
+        text-align: center;
+    } */
+}
+@media screen and (min-width: 900px){
+    .flowers__title{
+        margin-top: -100px;
+    }
+    #flowers__1{
+        font-size: 10em;
+    }
+    .text__flowers_1{
+        height: 273px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    /* #passion__2{
+        font-size: 10em;
+    }
+    .text__passion_2{
+        height: 273px;
+        margin-top: -150px;
+        text-align: center;
+    } */
+}
+
+
+/* *** TEXT *********************************** */
+.italique{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
+#flowers__text_1{
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 255, 255);
+    z-index: 2;  
+}
+.text__entreprise_1 {
+    overflow: hidden;
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: 0px;
+}
+#flowers__text_2{
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 255, 255);
+    z-index: 2;  
+}
+.text__entreprise_2 {
+    overflow: hidden;
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: -20px;
+}
+#flowers__text_3{
+    /* font-family: "GRIFTER"; */
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em; 
+    color: rgb(255, 255, 255);
+    z-index: 2;  
+}
+.text__entreprise_3 {
+    overflow: hidden;
+    width: 100%;
+    height: 48px;
+    z-index: 1;
+
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 0px;
+}
+@media screen and (min-width: 700px){
+    #flowers__text_1{
+        font-size: 2em;
+    }
+    .text__entreprise_1{
+        height: 60px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #flowers__text_2{
+        font-size: 2em;
+    }
+    .text__entreprise_2{
+        height: 60px;
+        margin-top: -25px;
+        text-align: center;
+    }
+    #flowers__text_3{
+        font-size: 2em;
+    }
+    .text__entreprise_3{
+        height: 64px;
+        margin-top: -25px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 900px){
+    #flowers__text_1{
+        font-size: 2.5em;
+    }
+    .text__entreprise_1{
+        height: 74px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #flowers__text_2{
+        font-size: 2.5em;
+    }
+    .text__entreprise_2{
+        height: 74px;
+        margin-top: -35px;
+        text-align: center;
+    }
+    #flowers__text_3{
+        font-size: 2.5em;
+    }
+    .text__entreprise_3{
+        height: 79px;
+        margin-top: -35px;
+        text-align: center;
+    }
+}
+/* ******************************************** */
+
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    height: 4211px;
+  }
+@media screen and (max-width: 699px){
+    .container {
+        width: 33.33%;
+        height: 100vh;
+        float: left;
+        position: relative;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 20px;
+      }
+}
+@media screen and (min-width: 700px){
+    .container {
+        width: 33.33%;
+        height: 100vh;
+        float: left;
+        position: relative;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+}
+@media screen and (min-width: 900px){
+    .container {
+        width: 33.33%;
+        height: 100vh;
+        float: left;
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+  .image-container {
+    width: 30.6%;
+    position: fixed;
+    height: 200vh;
+    transform: translate(0px, 0px);
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.04, 0.72, 0.09, 0.99) !important;
+  }
+
+  #image-container1 {
+    transform: translate(0px, -1475px);
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    height: 33.3%;
+    transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+    background-image: url('img-portfolio/flower-0.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+  }
+
+  .image1 {
+    position: relative;
+    width: 100%;
+    height: 33.3%;
+    transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+    background-image: url('img-portfolio/flower-4.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+  }
+
+  .image2 {
+    position: relative;
+    width: 100%;
+    height: 33.3%;
+    transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+    background-image: url('img-portfolio/flower-2.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+  }
+
+  /* .text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 92px;
+    margin-top: 8vh;
+    color: #ff665b;
+    font-weight: 900;
+  } */
+
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-size: 92px; */
+    margin-top: 8vh;
+    font-weight: 900;
+  }
