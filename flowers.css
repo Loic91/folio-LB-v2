@@ -290,6 +290,7 @@ li{
     position: fixed;
     height: 200vh;
     transform: translate(0px, 0px);
+    /* transition-duration: 0.6s; */
     transition-duration: 15.6s;
     transition-timing-function: cubic-bezier(0.04, 0.72, 0.09, 0.99) !important;
   }
