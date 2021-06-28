@@ -241,6 +241,9 @@ li{
 .accueil__container .contact{
     margin-top: 300px;
 }
+.accueil__container .reseau{
+    margin-top: 300px;
+}
 .accueil__container .section-text {
     /* MODIFIER LA LONGUEUR DU CONTAINER ICI */
     /* height: calc(140vh + 32px + 16px); */
@@ -328,6 +331,20 @@ li{
     color: rgb(255, 255, 255);
     margin-top: -10px;
 }
+.main-word-4{
+    font-family: "GRIFTER";
+    text-align: left;
+    width: 110%;
+    height: 66px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.word-four h2{
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
 @media (max-width: 699px){
     .section-text{
         margin-top: -200px;
@@ -353,12 +370,22 @@ li{
         padding-top: 3px;
     }
     .main-word-3{
-        width: 220%;
+        width: 240%;
         height: 12px;
         text-align: left;
         margin-left: -30px;
     }
     .word-three h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+    .main-word-4{
+        width: 240%;
+        height: 12px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-four h2{
         font-size: 1.2em;
         padding-top: 3px;
     }
@@ -422,6 +449,16 @@ li{
         font-size: 1.2em;
         padding-top: 3px;
     }
+    .main-word-4{
+        width: 220%;
+        height: 41px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-four h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
     
 }
 @media (min-width: 900px){
@@ -469,7 +506,16 @@ li{
         font-size: 1.2em;
         padding-top: 3px;
     }
-    
+    .main-word-4{
+        width: 220%;
+        height: 57px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-four h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
 }
 @media (min-width: 1100px){
     .section-text{
@@ -478,11 +524,44 @@ li{
 }
 
 
-/* CONTACT ******************************************************************* */
-/* .paragraph{
-    width: 900px;
-    margin-bottom: 550px;
-} */
+/* DEFILEMENT 
+  ================================================= */
+  .defilement{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: transparent;
+  top: 0px;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 12em;
+  position: relative;
+  width: 100%;
+  pointer-events: none;
+}
+.marquee span:after {
+  content: "\00a0";
+}
+.marquee.left span {
+  animation: 80s marqueeAnimation infinite linear;
+}
+.marquee.right span {
+  margin-top: -30px;
+  animation: 80s marqueeAnimation infinite linear reverse;
+}
+/* ============================== */
 
 
 

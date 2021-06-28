@@ -305,6 +305,30 @@ ScrollTrigger.create({
   }),
   // markers: true
 })
+ScrollTrigger.create({
+  trigger: '.word-three',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('.word-three', 1.8, {
+              y: '100%',
+              delay: 0.7,
+  }),
+  // markers: true
+})
+ScrollTrigger.create({
+  trigger: '.word-four',
+  scroller: '.smooth-scroll',
+
+  start: "top bottom",
+  end: "top top",
+  animation: gsap.from('.word-four', 1.8, {
+              y: '100%',
+              delay: 0.7,
+  }),
+  // markers: true
+})
 
 ScrollTrigger.create({
   trigger: '.images-container',
