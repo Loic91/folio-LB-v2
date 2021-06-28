@@ -390,7 +390,7 @@ li{
         padding-top: 3px;
     }
     .accueil__container .section-text .images-container p {
-        width: 205%;
+        width: 195%;
         max-height: 75vh;
         height: 100%;
         align-self: stretch;
@@ -398,7 +398,7 @@ li{
     
         font-family: 'Mukta', sans-serif;
         color: white;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .pinned-quote{
         margin-left: -10px;
