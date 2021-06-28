@@ -238,12 +238,13 @@ li{
 }
 
 /* TEXTE ABOUT ********************************************* */
-/* .section-text{
-    margin-top: 150px;
-} */
+.contact{
+    margin-top: 200px;
+}
 .accueil__container .section-text {
     /* MODIFIER LA LONGUEUR DU CONTAINER ICI */
-    height: calc(140vh + 32px + 16px);
+    /* height: calc(140vh + 32px + 16px); */
+    /* height: calc(80vh + 32px + 16px); */
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-columns: 40% 60%;
@@ -297,6 +298,7 @@ li{
     color: rgb(255, 255, 255);
     margin-top: -10px;
 }
+
 .main-word-2{
     font-family: "GRIFTER";
     text-align: left;
@@ -306,6 +308,21 @@ li{
     padding-top: 10px;
 }
 .word-two h2{
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
+
+.main-word-3{
+    font-family: "GRIFTER";
+    text-align: left;
+    width: 110%;
+    height: 66px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.word-three h2{
     font-size: 2em;
     font-weight: lighter;
     color: rgb(255, 255, 255);
@@ -332,6 +349,16 @@ li{
         margin-left: -30px;
     }
     .word-two h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+    .main-word-3{
+        width: 220%;
+        height: 12px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-three h2{
         font-size: 1.2em;
         padding-top: 3px;
     }
@@ -385,6 +412,17 @@ li{
         font-size: 1.2em;
         padding-top: 3px;
     }
+    .main-word-3{
+        width: 220%;
+        height: 41px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-three h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+    
 }
 @media (min-width: 900px){
     .accueil__container .section-text .images-container p {
@@ -421,6 +459,17 @@ li{
         font-size: 1.2em;
         padding-top: 3px;
     }
+    .main-word-3{
+        width: 220%;
+        height: 57px;
+        text-align: left;
+        margin-left: -30px;
+    }
+    .word-three h2{
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+    
 }
 @media (min-width: 1100px){
     .section-text{
@@ -430,7 +479,10 @@ li{
 
 
 /* CONTACT ******************************************************************* */
-
+/* .paragraph{
+    width: 900px;
+    margin-bottom: 550px;
+} */
 
 
 
