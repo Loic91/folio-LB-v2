@@ -238,8 +238,8 @@ li{
 }
 
 /* TEXTE ABOUT ********************************************* */
-.contact{
-    margin-top: 200px;
+.accueil__container .contact{
+    margin-top: 300px;
 }
 .accueil__container .section-text {
     /* MODIFIER LA LONGUEUR DU CONTAINER ICI */
