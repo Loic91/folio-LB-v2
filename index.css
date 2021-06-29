@@ -69,7 +69,7 @@ input:checked + label {
 
   
 input:checked + label:after {
-    left: calc(100% - 5px);
+    left: calc(100% - 2px);
     transform: translateX(-100%);
 
     border: 1px solid #086194;
