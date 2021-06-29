@@ -97,6 +97,9 @@ a {
   transform: rotate(-20deg);
   opacity: 0.65;
 }
+.slider .item .imgs .grid{
+  filter: var(--filter);
+}
 
 @media screen and (max-width: 900px){
     /* .slider{
@@ -225,6 +228,10 @@ a {
   z-index: 3;
   transition: transform 0.3s;
 }
+.slider .nav .next{
+  color: blue;
+}
+
 .slider .nav .next {
   right: 2rem;
   background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M 19 8 L 19 11 L 1 11 L 1 13 L 19 13 L 19 16 L 23 12 L 19 8 z' fill='white'/%3E%3C/svg%3E");

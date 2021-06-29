@@ -8,16 +8,78 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
+html{
+    --bg: #1d1c1c;
+    --color-text: #ffffff;
+    --particles: #ffffff;
+}
+html[data-theme=dark] {
+    --bg: #d4d7da;
+    --color-text: #086194;
+    --particles: #086194;
+    --filter: drop-shadow(16px 16px 20px blue);
+}
+.toggle-container{
+    margin-right: 20px;
+}
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: rgb(65, 63, 63);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+
+    margin-right: 0px;
+    margin-top: -20px;
+}
+label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+} 
+input:checked + label {
+    background: var(--color-headings);
+}
+  
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}  
+label:active:after {
+    width: 45px;
+}
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+/* *************************************** */
 body{
     margin: 0;
     padding: 0;
-    background-color: #1d1c1c;
+    background-color: var(--bg);
 }
 /* NAV *********************************** */
 nav{
     font-family: "GRIFTER";
     /* font-family: 'Mukta', sans-serif; */
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
 }
 
 li{
@@ -48,7 +110,7 @@ li{
 .c-cta h1 {
     /* font-family: "ApexMk3"; */
     font-family: "GRIFTER";
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -283,7 +345,7 @@ li{
     object-fit: cover; */
 
     font-family: 'Mukta', sans-serif;
-    color: white;
+    color: var(--color-text);
     font-size: 1.6em;
 }
 
@@ -298,7 +360,7 @@ li{
 .word-one h2{
     font-size: 2em;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     margin-top: -10px;
 }
 
@@ -313,7 +375,7 @@ li{
 .word-two h2{
     font-size: 2em;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     margin-top: -10px;
 }
 
@@ -328,7 +390,7 @@ li{
 .word-three h2{
     font-size: 2em;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     margin-top: -10px;
 }
 .main-word-4{
@@ -342,7 +404,7 @@ li{
 .word-four h2{
     font-size: 2em;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     margin-top: -10px;
 }
 @media (max-width: 699px){
@@ -397,7 +459,7 @@ li{
         object-fit: cover;
     
         font-family: 'Mukta', sans-serif;
-        color: white;
+        color: var(--color-text);
         font-size: 1.1em;
     }
     .pinned-quote{
@@ -413,7 +475,7 @@ li{
         object-fit: cover;
     
         font-family: 'Mukta', sans-serif;
-        color: white;
+        color: var(--color-text);
         font-size: 1.4em;
     }
     .section-text{
@@ -470,7 +532,7 @@ li{
         object-fit: cover;
     
         font-family: 'Mukta', sans-serif;
-        color: white;
+        color: var(--color-text);
         font-size: 1.4em;
     }
     .section-text{
@@ -541,7 +603,7 @@ li{
 .marquee {
     font-family: "GRIFTER"; 
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: var(--color-text);
     color: transparent;
     top: 0px;
     display: flex;
