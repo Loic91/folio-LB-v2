@@ -58,7 +58,7 @@ label:after {
     border: 1px solid white;
     /* background: linear-gradient(45deg,rgba(170, 164, 164, 0.822),  rgba(31, 30, 30, 0.25)); */
     border-radius: 90px;
-    transition: 0.6s;
+    transition: 0.7s;
 } 
 input:checked + label {
     /* background: rgb(196, 190, 190); */
