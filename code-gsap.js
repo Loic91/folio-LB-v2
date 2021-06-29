@@ -121,6 +121,14 @@ gsap.from(".svg", {
     ease:"power3.out"
 })
 
+gsap.from(".toggle-container", {
+    y:80, 
+    stagger:0.05, 
+    opacity:0, 
+    delay: 6.5,
+    duration:3.5, 
+    ease:"power3.out"
+})
 
 
 
