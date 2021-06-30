@@ -60,7 +60,10 @@ button {
 }
 @media screen and (max-width: 600px){
     button{
-        margin-right: 40px;
+        margin-right: 0px;
+        margin-top: 0px;
+        width: 15px;
+        height: 15px;
     }
 }
 .sombre{
