@@ -58,6 +58,11 @@ button {
     margin-top: -40px;
     margin-right: 4px;
 }
+@media screen and (max-width: 600px){
+    button{
+        margin-right: 40px;
+    }
+}
 .sombre{
     background: rgb(255, 255, 255);
 } 

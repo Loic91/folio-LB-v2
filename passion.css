@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', Verdana, sans-serif;
-    background-color: #757474;
+    background-color: var(--bg-projects);
 }
 /* CACHER LA SCROLLBAR POUR Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -29,7 +29,7 @@ body {
 /*** Nav ***  =================== */
 nav{
     font-family: "GRIFTER";
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     margin-top: -30px;
 }
 
@@ -65,7 +65,7 @@ li{
     font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 4.2em; 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     z-index: 2;  
 }
 .text__passion_1 {
@@ -81,7 +81,7 @@ li{
     font-family: "GRIFTER";
     font-weight: lighter;
     font-size: 4.2em; 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     z-index: 2;  
 }
 .text__passion_2 {
@@ -148,7 +148,7 @@ li{
     font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     z-index: 2;  
 }
 .text__entreprise_1 {
@@ -165,7 +165,7 @@ li{
     font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     z-index: 2;  
 }
 .text__entreprise_2 {
@@ -182,7 +182,7 @@ li{
     font-family: 'Mukta', sans-serif;
     font-weight: lighter;
     font-size: 1.5em; 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     z-index: 2;  
 }
 .text__entreprise_3 {
