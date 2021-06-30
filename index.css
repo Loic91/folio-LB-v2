@@ -10,16 +10,64 @@
 
 html{
     --bg: #1d1c1c;
+    --bg-projects: #757474;
     --color-text: #ffffff;
     --particles: #ffffff;
 }
-html[data-theme=dark] {
+/* html[data-theme=light] {
     --bg: #d4d7da;
+    --bg-projects: #d4d7da;
     --color-text: #086194;
     --particles: #086194;
     --filter: drop-shadow(16px 16px 20px #086194);
+} */
+body.dark {
+    --bg: #d4d7da;
+    --bg-projects: #d4d7da;
+    --color-text: #086194;
+    --particles: #086194;
+    --filter: drop-shadow(16px 16px 20px #086194);
+
+    transition: all 1200ms !important;
+    transition-delay: 0 !important;
 }
-.toggle-container{
+/* ************************* */
+button:hover {
+    background: rgba(245, 241, 241, 0.8);
+}
+  
+.dark-button i {
+    transform: rotate(35deg);
+    margin-left: 0.3rem;
+}
+ul button{
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+
+    margin-top: -40px;
+    margin-right: 3px;
+}
+.sombre{
+    background: rgb(255, 255, 255);
+} 
+.lumineux{
+    background: #086194;
+}
+
+
+/* ************************* */
+/* .toggle-container{
     padding: 25px;;
 }
 
@@ -33,13 +81,8 @@ label {
     text-indent: -9999px;
     width: 30px;
     height: 20px;
-
-    /* background: rgb(78, 76, 76); */
     border-radius: 50%;
     border: 1px solid white;
-    /* background-color: rgb(44, 42, 42);
-    background: linear-gradient(45deg,rgba(88, 85, 85, 0.9),  rgba(12, 12, 12, 0.25));
-    box-shadow:inset 5px 5px 6px #00000066,inset -5px -5px 7px #00000091; */
 
     float: right;
     border-radius: 100px;
@@ -54,19 +97,13 @@ label:after {
     left: 4px;
     width: 10px;
     height: 10px;
-    /* background: rgb(255, 255, 255); */
     border: 1px solid white;
-    /* background: linear-gradient(45deg,rgba(170, 164, 164, 0.822),  rgba(31, 30, 30, 0.25)); */
     border-radius: 90px;
     transition: 0.7s;
 } 
 input:checked + label {
-    /* background: rgb(196, 190, 190); */
     border: 1px solid #086194;
-    /* background: linear-gradient(45deg,rgba(255, 255, 255, 0.9),  rgba(14, 13, 13, 0.507));
-    box-shadow:inset 5px 5px 6px #e9e9e9d5,inset 5px 5px 7px #0000006e; */
 }
-
   
 input:checked + label:after {
     left: calc(100% - 2px);
@@ -83,7 +120,7 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
-}
+} */
 /* *************************************** */
 body{
     margin: 0;
