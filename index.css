@@ -12,7 +12,7 @@ html{
     --bg: #1d1c1c;
     --bg-projects: #757474;
     --color-text: #ffffff;
-    --particles: #ffffff;
+    --particles: #ffffff;  
 }
 /* html[data-theme=light] {
     --bg: #d4d7da;
@@ -21,15 +21,15 @@ html{
     --particles: #086194;
     --filter: drop-shadow(16px 16px 20px #086194);
 } */
+body{
+    transition: background-color 900ms ease;
+}
 body.dark {
     --bg: #d4d7da;
     --bg-projects: #d4d7da;
     --color-text: #086194;
     --particles: #086194;
     --filter: drop-shadow(16px 16px 20px #086194);
-
-    transition: all 1200ms !important;
-    transition-delay: 0 !important;
 }
 /* ************************* */
 button:hover {
@@ -56,7 +56,7 @@ button {
     position: relative;
 
     margin-top: -40px;
-    margin-right: 3px;
+    margin-right: 4px;
 }
 .sombre{
     background: rgb(255, 255, 255);
