@@ -60,7 +60,7 @@ button {
 }
 @media screen and (max-width: 600px){
     button{
-        margin-right: 0px;
+        margin-top: 0px;
         z-index: 99;
     }
 }
